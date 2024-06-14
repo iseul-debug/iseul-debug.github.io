@@ -106,6 +106,7 @@ h6,
     color: #000000;
 }
 
+/* ----------------- */
 .overlay {
     height: 100%;
     width: 0;
@@ -113,10 +114,61 @@ h6,
     z-index: 999999;
     top: 0;
     right: 0;
-    background-color: rgb(0, 0, 0);
     overflow-x: hidden;
     transition: 0.6s;
 }
+
+#bg-video {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    z-index: -10;
+    transform: translate(-50%, -50%);
+    background-size: cover;
+}
+
+.color-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(rgba(6, 9, 2, 0.7), rgba(1, 3, 0, 0.7));
+    z-index: -5;
+}
+
+.closebtn {
+    position: absolute;
+    top: 20px;
+    right: 45px;
+    font-size: 60px;
+    color: white;
+    text-decoration: none;
+}
+
+/* Style for the navigation links */
+.overlay-content a {
+    padding: 8px;
+    text-decoration: none;
+    font-size: 36px;
+    color: white;
+    display: block;
+    transition: 0.3s;
+}
+
+
+.overlay-content a:hover,
+.overlay-content a.active {
+    color: #f1f1f1;
+}
+
+
+/* --------------------------- */
+
 
 .overlay-content {
     position: relative;
@@ -124,6 +176,7 @@ h6,
     width: 100%;
     text-align: center;
     margin-top: 30px;
+    z-index: 1000000;
 }
 
 .overlay a {
@@ -138,7 +191,7 @@ h6,
 .overlay a:hover,
 .overlay a:focus,
 .overlay a.active {
-    color: #2d685c;
+    color: #37903B;
 }
 
 .overlay .closebtn {
@@ -202,9 +255,28 @@ h6,
     }
 }
 
-.page-header {
-    background: linear-gradient(rgba(173, 188, 159, 0.8), rgba(41, 75, 41, 0.8)),
-        url(../img/carousel-1.jpg) center center no-repeat;
+/* -------------------------- */
+.page-header-baiviet {
+    background: linear-gradient(rgba(173, 188, 159, 0.3), rgba(41, 75, 41, 0.3)),
+        url(../img/banner-baiviet.jpg) center center no-repeat;
+    background-size: cover;
+}
+
+.page-header-khoahoc {
+    background: linear-gradient(rgba(173, 188, 159, 0.3), rgba(41, 75, 41, 0.3)),
+        url(../img/banner-khoahoc.jpg) center center no-repeat;
+    background-size: cover;
+}
+
+.page-header-about {
+    background: linear-gradient(rgba(173, 188, 159, 0.3), rgba(41, 75, 41, 0.3)),
+        url(../img/banner-about.jpg) center center no-repeat;
+    background-size: cover;
+}
+
+.page-header-contact {
+    background: linear-gradient(rgba(173, 188, 159, 0.3), rgba(41, 75, 41, 0.3)),
+        url(../img/banner-contact.jpg) center center no-repeat;
     background-size: cover;
 }
 
@@ -528,11 +600,63 @@ h6,
 
 /* ---------- */
 #hinh {
-    width: 100px;
-    height: 100px;
-    border-radius: 50%;
+    width: 100%;
+    height: 100%;
+    /* border-radius: 50%; */
 }
 
 #img-about {
     height: 400px;
+}
+
+.popup-overlay {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: 1000;
+
+}
+
+.popup {
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 90%;
+    max-width: 800px;
+    height: 98%;
+    background: #fff;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    z-index: 1001;
+    overflow-y: auto;
+    /* animation: fadeIn 1s; */
+    animation: fadeIn 1s ease forwards;
+}
+
+.close-popup {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background: none;
+    border: none;
+    font-size: 32px;
+    cursor: pointer;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translate(-50%, -50%) scale(0.5);
+    }
+
+    to {
+        opacity: 1;
+        transform: translate(-50%, -50%) scale(1);
+    }
 }

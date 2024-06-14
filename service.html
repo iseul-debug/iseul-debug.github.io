@@ -44,10 +44,14 @@
 
     <!-- Navbar Start -->
     <div id="myNav" class="overlay">
-        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&otimes;</a>
+        <video autoplay muted loop id="bg-video">
+            <source src="video.mp4" type="video/mp4">
+        </video>
+        <div class="color-overlay"></div>
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
         <div class="overlay-content">
             <a href="index.html" class="">Trang chủ</a>
-            <a href="about.html" class="">Rác thải nhựa</a>
+            <a href="about.html" class="">Về chúng tôi</a>
             <a href="service.html" class="active">Bài viết</a>
             <a href="project.html" class="">Khóa học</a>
             <a href="contact.html" class="">Liên hệ</a>
@@ -59,7 +63,7 @@
     <!-- Navbar End -->
 
     <!-- Page Header Start -->
-    <div class="container-fluid page-header py-5 mb-5 wow fadeIn" data-wow-delay="0.1s">
+    <div class="container-fluid page-header-baiviet py-5 mb-5 wow fadeIn" data-wow-delay="0.1s">
         <div class="container text-center py-5">
             <h1 class="display-3 text-white mb-4 animated slideInDown">
                 Bạn có biết...?
@@ -73,7 +77,6 @@
     <div class="container-xxl py-5">
         <div class="container">
             <div class="text-center mx-auto wow fadeInUp" data-wow-delay="0.1s" style="max-width: 500px">
-                <!-- <p class="fs-5 fw-bold text-primary">Our Services</p> -->
                 <h1 class="display-5 mb-5">Có thể bạn nên biết</h1>
             </div>
             <div class="row g-4">
@@ -91,7 +94,18 @@
                                 Erat ipsum justo amet duo et elitr dolor, est duo duo eos
                                 lorem sed diam stet diam sed stet.
                             </p>
-                            <a class="btn btn-sm" href=""><i class="fa fa-plus text-primary me-2"></i>Read More</a>
+                            <!-- <a class="btn btn-sm" href=""><i class="fa fa-plus text-primary me-2"></i>Read More</a> -->
+                            <a class="btn btn-sm" href="javascript:void(0)" onclick="openPopup()"><i
+                                    class="fa fa-plus text-primary me-2"></i>Read More</a>
+
+                            <div class="popup-overlay" id="popupOverlay">
+                                <div class="popup">
+                                    <button class="close-popup" onclick="closePopup()">&times;</button>
+                                    <h2>Title</h2>
+                                    <p-1>Content</p-1>
+                                </div>
+
+                            </div>
                         </div>
                     </div>
                 </div>

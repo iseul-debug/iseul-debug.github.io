@@ -76,3 +76,11 @@ function openNav() {
 function closeNav() {
     document.getElementById("myNav").style.width = "0%";
 }
+
+function openPopup() {
+    document.getElementById('popupOverlay').style.display = 'block';
+}
+
+function closePopup() {
+    document.getElementById('popupOverlay').style.display = 'none';
+}
