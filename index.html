@@ -2,79 +2,74 @@
 <html lang="en">
 
 <head>
-    <meta charset="utf-8">
+    <meta charset="utf-8" />
     <title>Rac Thai Nhua</title>
-    <meta content="width=device-width, initial-scale=1.0" name="viewport">
-    <meta content="" name="keywords">
-    <meta content="" name="description">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <meta content="" name="keywords" />
+    <meta content="" name="description" />
 
     <!-- Favicon -->
-    <link href="img/favicon.ico" rel="icon">
+    <link href="img/favicon.ico" rel="icon" />
 
     <!-- Google Web Fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
         href="https://fonts.googleapis.com/css2?family=Jost:wght@500;600;700&family=Open+Sans:wght@400;500&display=swap"
-        rel="stylesheet">
+        rel="stylesheet" />
 
     <!-- Icon Font Stylesheet -->
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet" />
 
     <!-- Libraries Stylesheet -->
-    <link href="lib/animate/animate.min.css" rel="stylesheet">
-    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
-    <link href="lib/lightbox/css/lightbox.min.css" rel="stylesheet">
+    <link href="lib/animate/animate.min.css" rel="stylesheet" />
+    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet" />
+    <link href="lib/lightbox/css/lightbox.min.css" rel="stylesheet" />
 
     <!-- Customized Bootstrap Stylesheet -->
-    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/bootstrap.min.css" rel="stylesheet" />
 
     <!-- Template Stylesheet -->
-    <link href="css/style.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet" />
 </head>
 
 <body>
     <!-- Spinner Start -->
     <div id="spinner"
         class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
-        <div class="spinner-border text-primary" role="status" style="width: 3rem; height: 3rem;"></div>
+        <div class="spinner-border text-primary" role="status" style="width: 3rem; height: 3rem"></div>
     </div>
     <!-- Spinner End -->
 
-
     <!-- Navbar Start -->
-    <nav class="navbar navbar-expand-lg bg-white navbar-light sticky-top p-0">
-        <a href="index.html" class="navbar-brand d-flex align-items-center px-4 px-lg-5">
-            <h1 class="m-0">SCHOOLABS</h1>
-        </a>
-        <button type="button" class="navbar-toggler me-4" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarCollapse">
-            <div class="navbar-nav ms-auto p-4 p-lg-0">
-                <a href="index.html" class="nav-item nav-link active">Trang chủ</a>
-                <a href="about.html" class="nav-item nav-link">Rác thải nhựa</a>
-                <a href="service.html" class="nav-item nav-link">Bài viết</a>
-                <a href="project.html" class="nav-item nav-link">Khóa học</a>
-                <a href="contact.html" class="nav-item nav-link">Liên hệ</a>
-            </div>
+    <div id="myNav" class="overlay">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&otimes;</a>
+        <div class="overlay-content">
+            <a href="index.html" class="active">Trang chủ</a>
+            <a href="about.html" class="">Rác thải nhựa</a>
+            <a href="service.html" class="">Bài viết</a>
+            <a href="project.html" class="">Khóa học</a>
+            <a href="contact.html" class="">Liên hệ</a>
         </div>
-    </nav>
+    </div>
+    <div id="container">
+        <span id="openNav" onclick="openNav()">&#9776;</span>
+    </div>
     <!-- Navbar End -->
-
 
     <!-- Carousel Start -->
     <div class="container-fluid p-0 wow fadeIn" data-wow-delay="0.1s">
         <div id="header-carousel" class="carousel slide" data-bs-ride="carousel">
             <div class="carousel-inner">
                 <div class="carousel-item active">
-                    <img class="w-100" src="img/carousel-1.jpg" alt="Image">
+                    <img class="w-100" src="img/carousel-1.jpg" alt="Image" />
                     <div class="carousel-caption">
                         <div class="container">
                             <div class="row justify-content-center">
                                 <div class="col-lg-8">
-                                    <h1 class="display-1 text-white mb-5 animated slideInDown">CUỘC SỐNG XANH(chành)
+                                    <h1 class="display-1 text-white mb-5 animated slideInDown">
+                                        CUỘC SỐNG XANH(chành)
                                     </h1>
                                     <a href="" class="btn btn-primary py-sm-3 px-sm-4">Tải xuống</a>
                                 </div>
@@ -83,12 +78,13 @@
                     </div>
                 </div>
                 <div class="carousel-item">
-                    <img class="w-100" src="img/carousel-2.jpg" alt="Image">
+                    <img class="w-100" src="img/carousel-2.jpg" alt="Image" />
                     <div class="carousel-caption">
                         <div class="container">
                             <div class="row justify-content-center">
                                 <div class="col-lg-7">
-                                    <h1 class="display-1 text-white mb-5 animated slideInDown">CUỘC SỐNG XANH(chành)
+                                    <h1 class="display-1 text-white mb-5 animated slideInDown">
+                                        CUỘC SỐNG XANH(chành)
                                     </h1>
                                     <a href="" class="btn btn-primary py-sm-3 px-sm-4">Tải xuống</a>
                                 </div>
@@ -109,13 +105,12 @@
     </div>
     <!-- Carousel End -->
 
-
     <!-- Top Feature Start -->
     <div class="container-fluid top-feature py-5 pt-lg-0">
         <div class="container py-5 pt-lg-0">
             <div class="row gx-0">
                 <div class="col-lg-4 wow fadeIn" data-wow-delay="0.1s">
-                    <div class="bg-white shadow d-flex align-items-center h-100 px-5" style="min-height: 160px;">
+                    <div class="bg-white shadow d-flex align-items-center h-100 px-5" style="min-height: 160px">
                         <div class="d-flex">
                             <div class="flex-shrink-0 btn-lg-square rounded-circle bg-light">
                                 <i class="fa fa-times text-primary"></i>
@@ -128,7 +123,7 @@
                     </div>
                 </div>
                 <div class="col-lg-4 wow fadeIn" data-wow-delay="0.3s">
-                    <div class="bg-white shadow d-flex align-items-center h-100 px-5" style="min-height: 160px;">
+                    <div class="bg-white shadow d-flex align-items-center h-100 px-5" style="min-height: 160px">
                         <div class="d-flex">
                             <div class="flex-shrink-0 btn-lg-square rounded-circle bg-light">
                                 <i class="fa fa-users text-primary"></i>
@@ -141,7 +136,7 @@
                     </div>
                 </div>
                 <div class="col-lg-4 wow fadeIn" data-wow-delay="0.5s">
-                    <div class="bg-white shadow d-flex align-items-center h-100 px-5" style="min-height: 160px;">
+                    <div class="bg-white shadow d-flex align-items-center h-100 px-5" style="min-height: 160px">
                         <div class="d-flex">
                             <div class="flex-shrink-0 btn-lg-square rounded-circle bg-light">
                                 <i class="fa fa-phone text-primary"></i>
@@ -158,32 +153,30 @@
     </div>
     <!-- Top Feature End -->
 
-
     <!-- Facts Start -->
     <div class="container-fluid facts my-5 py-5" data-parallax="scroll" data-image-src="img/carousel-1.jpg">
         <div class="container py-5">
             <div class="row g-5">
                 <div class="col-sm-6 col-lg-3 text-center wow fadeIn" data-wow-delay="0.1s">
-                    <h1 class="display-4 text-white" data-toggle="counter-up">1234</h1>
+                    <h1 class="display-4 text-white" data-toggle="counter-up">1</h1>
                     <span class="fs-5 fw-semi-bold text-light">Happy Clients</span>
                 </div>
                 <div class="col-sm-6 col-lg-3 text-center wow fadeIn" data-wow-delay="0.3s">
-                    <h1 class="display-4 text-white" data-toggle="counter-up">1234</h1>
+                    <h1 class="display-4 text-white" data-toggle="counter-up">2</h1>
                     <span class="fs-5 fw-semi-bold text-light">Garden Complated</span>
                 </div>
                 <div class="col-sm-6 col-lg-3 text-center wow fadeIn" data-wow-delay="0.5s">
-                    <h1 class="display-4 text-white" data-toggle="counter-up">1234</h1>
+                    <h1 class="display-4 text-white" data-toggle="counter-up">3</h1>
                     <span class="fs-5 fw-semi-bold text-light">Dedicated Staff</span>
                 </div>
                 <div class="col-sm-6 col-lg-3 text-center wow fadeIn" data-wow-delay="0.7s">
-                    <h1 class="display-4 text-white" data-toggle="counter-up">1234</h1>
+                    <h1 class="display-4 text-white" data-toggle="counter-up">4</h1>
                     <span class="fs-5 fw-semi-bold text-light">Awards Achieved</span>
                 </div>
             </div>
         </div>
     </div>
     <!-- Facts End -->
-
 
     <!-- Services Start -->
     <div class="container-xxl py-5">
@@ -192,9 +185,10 @@
                 <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.1s">
                     <p class="fs-5 fw-bold text-primary">HÓT HÒN HỌT</p>
                     <h1 class="display-5 mb-4">BÀI THÔNG TIN 1</h1>
-                    <p class="mb-4">Tóm tắt bài 1
-                        <br>...............................................
-                        <br>...............................................
+                    <p class="mb-4">
+                        Tóm tắt bài 1
+                        <br />...............................................
+                        <br />...............................................
                     </p>
                     <a class="btn btn-primary py-3 px-4" href="">Đọc nè!</a>
                 </div>
@@ -202,21 +196,22 @@
                     <div class="row g-4 align-items-center">
                         <div class="col-md-6">
                             <div class="row g-4">
-                                <div class="col-12 wow fadeIn" data-wow-delay="0.3s">
+                                <div class="col-12 wow fadeIn" data-wow-delay="0.3s" id="col12">
                                     <div class="text-center rounded py-5 px-4"
-                                        style="box-shadow: 0 0 45px rgba(0,0,0,.08);">
+                                        style="box-shadow: 0 0 45px rgba(0, 0, 0, 0.08)">
                                         <div class="btn-square bg-light rounded-circle mx-auto mb-4"
-                                            style="width: 90px; height: 90px;">
-                                            <i class="fa fa-check fa-3x text-primary"></i>
+                                            style="width: 90px; height: 90px">
+                                            <!-- <i class="fa fa-check fa-3x text-primary"></i> -->
+                                            <img src="img/service-1.jpg" alt="" id="hinh">;
                                         </div>
                                         <h4 class="mb-0">BÀI THÔNG TIN 2</h4>
                                     </div>
                                 </div>
-                                <div class="col-12 wow fadeIn" data-wow-delay="0.5s">
+                                <div class="col-12 wow fadeIn" data-wow-delay="0.5s" id="col12">
                                     <div class="text-center rounded py-5 px-4"
-                                        style="box-shadow: 0 0 45px rgba(0,0,0,.08);">
+                                        style="box-shadow: 0 0 45px rgba(0, 0, 0, 0.08)">
                                         <div class="btn-square bg-light rounded-circle mx-auto mb-4"
-                                            style="width: 90px; height: 90px;">
+                                            style="width: 90px; height: 90px">
                                             <i class="fa fa-users fa-3x text-primary"></i>
                                         </div>
                                         <h4 class="mb-0">BÀI THÔNG TIN 3</h4>
@@ -224,12 +219,12 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="col-md-6 wow fadeIn" data-wow-delay="0.7s">
+                        <div class="col-md-6 wow fadeIn" data-wow-delay="0.7s" id="col12">
                             <a href="service.html">
                                 <div class="text-center rounded py-5 px-4"
-                                    style="box-shadow: 0 0 45px rgba(0,0,0,.08);">
+                                    style="box-shadow: 0 0 45px rgba(0, 0, 0, 0.08)">
                                     <div class="btn-square bg-light rounded-circle mx-auto mb-4"
-                                        style="width: 90px; height: 90px;">
+                                        style="width: 90px; height: 90px">
                                         <i class="fa fa-tools fa-3x text-primary"></i>
                                     </div>
                                     <h4 class="mb-0">ĐỌC THÊM...</h4>
@@ -248,14 +243,15 @@
         <div class="container">
             <div class="row g-5 align-items-end">
                 <div class="col-lg-3 col-md-5 wow fadeInUp" data-wow-delay="0.1s">
-                    <img class="img-fluid rounded" data-wow-delay="0.1s" src="img/about.jpg">
+                    <img class="img-fluid rounded" id="img-about" data-wow-delay="0.1s" src="img/about.jpg" />
                 </div>
                 <div class="col-lg-6 col-md-7 wow fadeInUp" data-wow-delay="0.3s">
                     <h1 class="display-1 text-primary mb-0">01</h1>
                     <p class="text-primary mb-4">Năm hoạt động</p>
                     <h1 class="display-5 mb-4">Chúng tôi.........</h1>
-                    <p class="mb-4">Cụ thể hơn......................................................
-                        <br>..............................................................................................
+                    <p class="mb-4">
+                        Cụ thể hơn......................................................
+                        <br />..............................................................................................
                     </p>
                     <a class="btn btn-primary py-3 px-4" href="">Explore More</a>
                 </div>
@@ -285,13 +281,14 @@
     <!-- Team Start -->
     <div class="container-xxl py-5">
         <div class="container">
-            <div class="text-center mx-auto wow fadeInUp" data-wow-delay="0.1s" style="max-width: 500px;">
+            <div class="text-center mx-auto wow fadeInUp" data-wow-delay="0.1s" style="max-width: 500px">
                 <h1 class="display-5 mb-5">Dedicated & Experienced Team Members</h1>
             </div>
             <div class="row g-4">
                 <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
                     <div class="team-item rounded">
-                        <img class="img-fluid" src="img/team-1.jpg" alt="">
+                        <!-- <img class="img-fluid" src="img/team-1.jpg" alt="" /> -->
+                        <img class="img-fluid" src="img/carousel-1.jpg" alt="" />
                         <div class="team-text">
                             <h4 class="mb-0">Doris Jordan</h4>
                             <p class="text-primary">Landscape Designer</p>
@@ -307,7 +304,7 @@
                 </div>
                 <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
                     <div class="team-item rounded">
-                        <img class="img-fluid" src="img/team-2.jpg" alt="">
+                        <img class="img-fluid" src="img/team-2.jpg" alt="" />
                         <div class="team-text">
                             <h4 class="mb-0">Johnny Ramirez</h4>
                             <p class="text-primary">Garden Designer</p>
@@ -323,7 +320,7 @@
                 </div>
                 <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.5s">
                     <div class="team-item rounded">
-                        <img class="img-fluid" src="img/team-3.jpg" alt="">
+                        <img class="img-fluid" src="img/team-3.jpg" alt="" />
                         <div class="team-text">
                             <h4 class="mb-0">Diana Wagner</h4>
                             <p class="text-primary">Senior Gardener</p>
@@ -345,7 +342,7 @@
     <!-- Projects Start -->
     <div class="container-xxl py-5">
         <div class="container">
-            <div class="text-center mx-auto wow fadeInUp" data-wow-delay="0.1s" style="max-width: 500px;">
+            <div class="text-center mx-auto wow fadeInUp" data-wow-delay="0.1s" style="max-width: 500px">
                 <h1 class="display-5 mb-5">Các khóa học</h1>
             </div>
             <div class="row wow fadeInUp" data-wow-delay="0.3s">
@@ -360,15 +357,16 @@
             <div class="row g-4 portfolio-container">
                 <div class="col-lg-4 col-md-6 portfolio-item first wow fadeInUp" data-wow-delay="0.1s">
                     <div class="portfolio-inner rounded">
-                        <img class="img-fluid" src="img/service-1.jpg" alt="">
+                        <img class="img-fluid" src="img/service-1.jpg" alt="" />
                         <div class="portfolio-text">
-                            <h4 class="text-white mb-4">Miêu tả khóa học 1.............
-                                <br>..................................
-                                <br>....................................................
-                                <br>....................................................
-                                <br>....................................................
-                                <br>....................................................
-                                <br>....................................................
+                            <h4 class="text-white mb-4">
+                                Miêu tả khóa học 1.............
+                                <br />..................................
+                                <br />....................................................
+                                <br />....................................................
+                                <br />....................................................
+                                <br />....................................................
+                                <br />....................................................
                             </h4>
                             <div class="d-flex">
                                 <a class="btn btn-lg-square rounded-circle mx-2" href="img/service-1.jpg"
@@ -379,15 +377,16 @@
                 </div>
                 <div class="col-lg-4 col-md-6 portfolio-item second wow fadeInUp" data-wow-delay="0.3s">
                     <div class="portfolio-inner rounded">
-                        <img class="img-fluid" src="img/service-2.jpg" alt="">
+                        <img class="img-fluid" src="img/service-2.jpg" alt="" />
                         <div class="portfolio-text">
-                            <h4 class="text-white mb-4">Miêu tả khóa học 2.............
-                                <br>..................................
-                                <br>....................................................
-                                <br>....................................................
-                                <br>....................................................
-                                <br>....................................................
-                                <br>....................................................
+                            <h4 class="text-white mb-4">
+                                Miêu tả khóa học 2.............
+                                <br />..................................
+                                <br />....................................................
+                                <br />....................................................
+                                <br />....................................................
+                                <br />....................................................
+                                <br />....................................................
                             </h4>
                             <div class="d-flex">
                                 <a class="btn btn-lg-square rounded-circle mx-2" href="img/service-2.jpg"
@@ -398,15 +397,16 @@
                 </div>
                 <div class="col-lg-4 col-md-6 portfolio-item first wow fadeInUp" data-wow-delay="0.5s">
                     <div class="portfolio-inner rounded">
-                        <img class="img-fluid" src="img/service-3.jpg" alt="">
+                        <img class="img-fluid" src="img/service-3.jpg" alt="" />
                         <div class="portfolio-text">
-                            <h4 class="text-white mb-4">Miêu tả khóa học 3.............
-                                <br>..................................
-                                <br>....................................................
-                                <br>....................................................
-                                <br>....................................................
-                                <br>....................................................
-                                <br>....................................................
+                            <h4 class="text-white mb-4">
+                                Miêu tả khóa học 3.............
+                                <br />..................................
+                                <br />....................................................
+                                <br />....................................................
+                                <br />....................................................
+                                <br />....................................................
+                                <br />....................................................
                             </h4>
                             <div class="d-flex">
                                 <a class="btn btn-lg-square rounded-circle mx-2" href="img/service-3.jpg"
@@ -417,15 +417,16 @@
                 </div>
                 <div class="col-lg-4 col-md-6 portfolio-item second wow fadeInUp" data-wow-delay="0.1s">
                     <div class="portfolio-inner rounded">
-                        <img class="img-fluid" src="img/service-4.jpg" alt="">
+                        <img class="img-fluid" src="img/service-4.jpg" alt="" />
                         <div class="portfolio-text">
-                            <h4 class="text-white mb-4">Miêu tả khóa học 4.............
-                                <br>..................................
-                                <br>....................................................
-                                <br>....................................................
-                                <br>....................................................
-                                <br>....................................................
-                                <br>....................................................
+                            <h4 class="text-white mb-4">
+                                Miêu tả khóa học 4.............
+                                <br />..................................
+                                <br />....................................................
+                                <br />....................................................
+                                <br />....................................................
+                                <br />....................................................
+                                <br />....................................................
                             </h4>
                             <div class="d-flex">
                                 <a class="btn btn-lg-square rounded-circle mx-2" href="img/service-4.jpg"
@@ -436,15 +437,16 @@
                 </div>
                 <div class="col-lg-4 col-md-6 portfolio-item first wow fadeInUp" data-wow-delay="0.3s">
                     <div class="portfolio-inner rounded">
-                        <img class="img-fluid" src="img/service-5.jpg" alt="">
+                        <img class="img-fluid" src="img/service-5.jpg" alt="" />
                         <div class="portfolio-text">
-                            <h4 class="text-white mb-4">Miêu tả khóa học 5.............
-                                <br>..................................
-                                <br>....................................................
-                                <br>....................................................
-                                <br>....................................................
-                                <br>....................................................
-                                <br>....................................................
+                            <h4 class="text-white mb-4">
+                                Miêu tả khóa học 5.............
+                                <br />..................................
+                                <br />....................................................
+                                <br />....................................................
+                                <br />....................................................
+                                <br />....................................................
+                                <br />....................................................
                             </h4>
                             <div class="d-flex">
                                 <a class="btn btn-lg-square rounded-circle mx-2" href="img/service-5.jpg"
@@ -455,15 +457,16 @@
                 </div>
                 <div class="col-lg-4 col-md-6 portfolio-item second wow fadeInUp" data-wow-delay="0.5s">
                     <div class="portfolio-inner rounded">
-                        <img class="img-fluid" src="img/service-6.jpg" alt="">
+                        <img class="img-fluid" src="img/service-6.jpg" alt="" />
                         <div class="portfolio-text">
-                            <h4 class="text-white mb-4">Các khóa học khác.............
-                                <br>..................................
-                                <br>....................................................
-                                <br>....................................................
-                                <br>....................................................
-                                <br>....................................................
-                                <br>....................................................
+                            <h4 class="text-white mb-4">
+                                Các khóa học khác.............
+                                <br />..................................
+                                <br />....................................................
+                                <br />....................................................
+                                <br />....................................................
+                                <br />....................................................
+                                <br />....................................................
                             </h4>
                             <div class="d-flex">
                                 <a class="btn btn-lg-square rounded-circle mx-2" href="img/service-6.jpg"
@@ -476,8 +479,6 @@
         </div>
     </div>
     <!-- Projects End -->
-
-
 
     <!-- Testimonial Start -->
     <!-- <div class="container-xxl py-5">
@@ -513,7 +514,6 @@
             </div>
         </div>
     </div> -->
-
 
     <!-- Footer Start -->
     <div class="container-fluid bg-dark text-light footer mt-5 py-5 wow fadeIn" data-wow-delay="0.1s">
@@ -566,11 +566,9 @@
     </div>
     <!-- Footer End -->
 
-
     <!-- Back to Top -->
     <a href="#" class="btn btn-lg btn-primary btn-lg-square rounded-circle back-to-top"><i
             class="bi bi-arrow-up"></i></a>
-
 
     <!-- JavaScript Libraries -->
     <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>

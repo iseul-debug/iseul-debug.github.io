@@ -1291,12 +1291,12 @@ progress {
 
     .g-md-0,
     .gx-md-0 {
-        --bs-gutter-x: 0
+        --bs-gutter-x: 0;
     }
 
     .g-md-0,
     .gy-md-0 {
-        --bs-gutter-y: 0
+        --bs-gutter-y: 0;
     }
 
     .g-md-1,
