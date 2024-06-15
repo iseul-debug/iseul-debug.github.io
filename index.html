@@ -2,590 +2,494 @@
 <html lang="en">
 
 <head>
-    <meta charset="utf-8" />
-    <title>Rac Thai Nhua</title>
-    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
-    <meta content="" name="keywords" />
-    <meta content="" name="description" />
+  <meta charset="utf-8" />
+  <title>Rac Thai Nhua</title>
+  <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+  <meta content="" name="keywords" />
+  <meta content="" name="description" />
 
-    <!-- Favicon -->
-    <link href="img/favicon.ico" rel="icon" />
+  <!-- Favicon -->
+  <link href="img/favicon.ico" rel="icon" />
 
-    <!-- Google Web Fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-        href="https://fonts.googleapis.com/css2?family=Jost:wght@500;600;700&family=Open+Sans:wght@400;500&display=swap"
-        rel="stylesheet" />
+  <!-- Google Web Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Jost:wght@500;600;700&family=Noto+Serif:wght@400;500&display=swap"
+    rel="stylesheet" />
 
-    <!-- Icon Font Stylesheet -->
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet" />
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet" />
+  <!-- Icon Font Stylesheet -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet" />
 
-    <!-- Libraries Stylesheet -->
-    <link href="lib/animate/animate.min.css" rel="stylesheet" />
-    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet" />
-    <link href="lib/lightbox/css/lightbox.min.css" rel="stylesheet" />
+  <!-- Libraries Stylesheet -->
+  <link href="lib/animate/animate.min.css" rel="stylesheet" />
+  <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet" />
+  <link href="lib/lightbox/css/lightbox.min.css" rel="stylesheet" />
 
-    <!-- Customized Bootstrap Stylesheet -->
-    <link href="css/bootstrap.min.css" rel="stylesheet" />
+  <!-- Customized Bootstrap Stylesheet -->
+  <link href="css/bootstrap.min.css" rel="stylesheet" />
 
-    <!-- Template Stylesheet -->
-    <link href="css/style.css" rel="stylesheet" />
+  <!-- Template Stylesheet -->
+  <link href="css/style.css" rel="stylesheet" />
 </head>
 
 <body>
-    <!-- Spinner Start -->
-    <div id="spinner"
-        class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
-        <div class="spinner-border text-primary" role="status" style="width: 3rem; height: 3rem"></div>
+  <!-- Spinner Start -->
+  <div id="spinner"
+    class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
+    <div class="spinner-border text-primary" role="status" style="width: 3rem; height: 3rem"></div>
+  </div>
+  <!-- Spinner End -->
+
+  <!-- Navbar Start -->
+  <div id="myNav" class="overlay">
+    <video autoplay muted loop id="bg-video">
+      <source src="video.mp4" type="video/mp4" />
+    </video>
+    <div class="color-overlay"></div>
+
+    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+    <div class="overlay-content">
+      <a href="index.html" class="active">Trang chủ</a>
+      <a href="about.html" class="">Về chúng tôi</a>
+      <a href="service.html" class="">Bài viết</a>
+      <a href="project.html" class="">Khóa học</a>
+      <a href="contact.html" class="">Địa điểm thu gom</a>
     </div>
-    <!-- Spinner End -->
+  </div>
+  <div id="container">
+    <span id="openNav" onclick="openNav()">&#9776;</span>
+  </div>
+  <!-- Navbar End -->
 
-    <!-- Navbar Start -->
-    <div id="myNav" class="overlay">
-        <video autoplay muted loop id="bg-video">
-            <source src="video.mp4" type="video/mp4">
-        </video>
-        <div class="color-overlay"></div>
-
-        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-        <div class="overlay-content">
-            <a href="index.html" class="active">Trang chủ</a>
-            <a href="about.html" class="">Về chúng tôi</a>
-            <a href="service.html" class="">Bài viết</a>
-            <a href="project.html" class="">Khóa học</a>
-            <a href="contact.html" class="">Liên hệ</a>
+  <!-- Carousel Start -->
+  <div class="container-fluid p-0 wow fadeIn" data-wow-delay="0.1s">
+    <div id="header-carousel" class="carousel slide" data-bs-ride="carousel">
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img class="w-100" src="img/carousel-1.jpg" alt="Image" />
         </div>
-    </div>
-    <div id="container">
-        <span id="openNav" onclick="openNav()">&#9776;</span>
-    </div>
-    <!-- Navbar End -->
-
-    <!-- Carousel Start -->
-    <div class="container-fluid p-0 wow fadeIn" data-wow-delay="0.1s">
-        <div id="header-carousel" class="carousel slide" data-bs-ride="carousel">
-            <div class="carousel-inner">
-                <div class="carousel-item active">
-                    <img class="w-100" src="img/carousel-1.jpg" alt="Image" />
-                </div>
-                <div class="carousel-item">
-                    <img class="w-100" src="img/carousel-2.jpg" alt="Image" />
-                </div>
-            </div>
-            <button class="carousel-control-prev" type="button" data-bs-target="#header-carousel" data-bs-slide="prev">
-                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                <span class="visually-hidden">Previous</span>
-            </button>
-            <button class="carousel-control-next" type="button" data-bs-target="#header-carousel" data-bs-slide="next">
-                <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                <span class="visually-hidden">Next</span>
-            </button>
+        <div class="carousel-item">
+          <img class="w-100" src="img/carousel-2.jpg" alt="Image" />
         </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#header-carousel" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#header-carousel" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
     </div>
-    <!-- Carousel End -->
+  </div>
+  <!-- Carousel End -->
 
-    <!-- Top Feature Start -->
-    <div class="container-fluid top-feature py-5 pt-lg-0">
-        <div class="container py-5 pt-lg-0">
-            <div class="row gx-0">
-                <div class="col-lg-4 wow fadeIn" data-wow-delay="0.1s">
-                    <div class="bg-white shadow d-flex align-items-center h-100 px-5" style="min-height: 160px">
-                        <div class="d-flex">
-                            <div class="flex-shrink-0 btn-lg-square rounded-circle bg-light">
-                                <i class="fa fa-times text-primary"></i>
-                            </div>
-                            <div class="ps-3">
-                                <h4>No Hidden Cost</h4>
-                                <span>Clita erat ipsum lorem sit sed stet duo justo</span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4 wow fadeIn" data-wow-delay="0.3s">
-                    <div class="bg-white shadow d-flex align-items-center h-100 px-5" style="min-height: 160px">
-                        <div class="d-flex">
-                            <div class="flex-shrink-0 btn-lg-square rounded-circle bg-light">
-                                <i class="fa fa-users text-primary"></i>
-                            </div>
-                            <div class="ps-3">
-                                <h4>Dedicated Team</h4>
-                                <span>Clita erat ipsum lorem sit sed stet duo justo</span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4 wow fadeIn" data-wow-delay="0.5s">
-                    <div class="bg-white shadow d-flex align-items-center h-100 px-5" style="min-height: 160px">
-                        <div class="d-flex">
-                            <div class="flex-shrink-0 btn-lg-square rounded-circle bg-light">
-                                <i class="fa fa-phone text-primary"></i>
-                            </div>
-                            <div class="ps-3">
-                                <h4>24/7 Available</h4>
-                                <span>Clita erat ipsum lorem sit sed stet duo justo</span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+  <!-- Top Feature Start -->
+  <div class="container-fluid top-feature py-5 pt-lg-0">
+    <div class="container py-5 pt-lg-0">
+      <div class="row gx-0">
+        <div class="col-lg-4 wow fadeIn" data-wow-delay="0.1s">
+          <div class="bg-white shadow d-flex align-items-center h-100 px-5" style="min-height: 160px">
+            <div class="d-flex">
+              <div class="flex-shrink-0 btn-lg-square rounded-circle bg-light">
+                <img src="img/fb-icon.png" class="img-icon">
+              </div>
+              <div class="ps-3">
+                <h4 style="color: black;">Facebook</h4>
+                <span></span>
+              </div>
             </div>
+          </div>
         </div>
+        <div class="col-lg-4 wow fadeIn" data-wow-delay="0.3s">
+          <div class="bg-white shadow d-flex align-items-center h-100 px-5" style="min-height: 160px">
+            <div class="d-flex">
+              <div class="flex-shrink-0 btn-lg-square rounded-circle bg-light">
+                <img src="img/ig-icon.png" class="img-icon">
+              </div>
+              <div class="ps-3">
+                <h4 style="color: black;">Instagram</h4>
+                <span></span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 wow fadeIn" data-wow-delay="0.5s">
+          <div class="bg-white shadow d-flex align-items-center h-100 px-5" style="min-height: 160px">
+            <div class="d-flex">
+              <div class="flex-shrink-0 btn-lg-square rounded-circle bg-light">
+                <img src="img/phone-icon.png" class="img-icon">
+              </div>
+              <div class="ps-3">
+                <h4 style="color: black;">24/7 Available</h4>
+                <span></span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
-    <!-- Top Feature End -->
+  </div>
+  <!-- Top Feature End -->
 
-    <!-- Facts Start -->
-    <div class="container-fluid facts my-5 py-5" data-parallax="scroll" data-image-src="img/carousel-1.jpg">
-        <div class="container py-5">
-            <div class="row g-5">
-                <div class="col-sm-6 col-lg-3 text-center wow fadeIn" data-wow-delay="0.1s">
-                    <h1 class="display-4 text-white" data-toggle="counter-up">1</h1>
-                    <span class="fs-5 fw-semi-bold text-light">Happy Clients</span>
-                </div>
-                <div class="col-sm-6 col-lg-3 text-center wow fadeIn" data-wow-delay="0.3s">
-                    <h1 class="display-4 text-white" data-toggle="counter-up">2</h1>
-                    <span class="fs-5 fw-semi-bold text-light">Garden Complated</span>
-                </div>
-                <div class="col-sm-6 col-lg-3 text-center wow fadeIn" data-wow-delay="0.5s">
-                    <h1 class="display-4 text-white" data-toggle="counter-up">3</h1>
-                    <span class="fs-5 fw-semi-bold text-light">Dedicated Staff</span>
-                </div>
-                <div class="col-sm-6 col-lg-3 text-center wow fadeIn" data-wow-delay="0.7s">
-                    <h1 class="display-4 text-white" data-toggle="counter-up">4</h1>
-                    <span class="fs-5 fw-semi-bold text-light">Awards Achieved</span>
-                </div>
-            </div>
+  <!-- Facts Start -->
+  <div class="container-fluid facts my-5 py-5" data-parallax="scroll" data-image-src="img/carousel-1.jpg">
+    <div class="container py-5">
+      <div class="row g-5">
+        <div class="col-sm-6 col-lg-3 text-center wow fadeIn" data-wow-delay="0.1s">
+          <h1 class="display-4 text-white" data-toggle="counter-up">1</h1>
+          <span class="fs-5 fw-semi-bold text-light">Đội</span>
         </div>
+        <div class="col-sm-6 col-lg-3 text-center wow fadeIn" data-wow-delay="0.3s">
+          <h1 class="display-4 text-white" data-toggle="counter-up">9</h1>
+          <span class="fs-5 fw-semi-bold text-light">Thành viên</span>
+        </div>
+        <div class="col-sm-6 col-lg-3 text-center wow fadeIn" data-wow-delay="0.5s">
+          <h1 class="display-4 text-white" data-toggle="counter-up">1</h1>
+          <span class="fs-5 fw-semi-bold text-light">Mục tiêu</span>
+        </div>
+        <div class="col-sm-6 col-lg-3 text-center wow fadeIn" data-wow-delay="0.7s">
+          <h1 class="display-4 text-white" data-toggle="counter-up">3</h1>
+          <span class="fs-5 fw-semi-bold text-light">Sản phẩm</span>
+        </div>
+      </div>
     </div>
-    <!-- Facts End -->
+  </div>
+  <!-- Facts End -->
 
-    <!-- Services Start -->
-    <div class="container-xxl py-5">
-        <div class="container">
-            <div class="row g-5 align-items-center">
-                <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.1s">
-                    <p class="fs-5 fw-bold text-primary">HÓT HÒN HỌT</p>
-                    <h1 class="display-5 mb-4">Không phân loại rác, bạn có biết gì chưa!</h1>
-                    <p class="mb-4">
-                        Bài báo “Taiwan's waste” đã đưa ra kết quả tích cực cho con số trăm triệu USD
-                        <br>bởi việc xử lý và phân loại nghiêm ngặt hơn 60% lượng phát thải của cả nước.
-                        <br>Việc không phân loại rác sẽ dẫn đến nhiều hậu quả nghiêm trọng ...
-                    </p>
-                    <button class="btn btn-primary py-3 px-4" onclick="openPopup()" href="">Đọc nè!</button>
-                    <div class="popup-overlay" id="popupOverlay">
-                        <div class="popup">
-                            <button class="close-popup" onclick="closePopup()">&times;</button>
-                            <div id="hh2">Không phân loại rác, bạn có biết gì chưa!</div>
-                            <div id="content-div">
-                                Bài báo “Taiwan's waste” đã đưa ra kết quả tích cực cho con số trăm triệu USD bởi việc
-                                xử lý và phân loại nghiêm ngặt hơn 60% lượng phát thải của cả nước. Việc không phân loại
-                                rác sẽ dẫn đến nhiều hậu quả nghiêm trọng, Đầu tiên ta có thể thấy rõ nhất môi trường
-                                đất và nước xung quanh chúng ta sẽ bị ô nhiễm do các chất độc hại có trong rác thải kim
-                                loại ngấm vào đất và, nước. Điều này ảnh hưởng đến hệ sinh thái và sức khoẻ con người,
-                                gây ra các loại dịch bệnh mới khó có thể kiểm soát.
-                                Thêm vào đó, việc không phân loại rác sẽ dẫn đến sự lãng phí rác thải hữu cơ và gây ra
-                                phát thải nhà kính. Nếu chúng ta không thực có sự nghiêm túc và kiểm soát nguồn rác thải
-                                chặt chẽ, các vật liệu tái chế (nhưa, kim loại và giấy) sẽ bị chôn lấp hoặc đốt cùng rác
-                                thải hữu cơ.
-                                Vì vậy phân loại rác sẽ mang lại những lợi ích đáng kể và cuộc sống an toàn cho cộng
-                                đồng chúng ta. Đồng thời, chúng ta có thể tận dụng và xử lý lại những nguồn rác phát
-                                thải, làm cho cộng đồng trở nên xanh hơn và bền vững hơn.
-                            </div>
-                        </div>
-                    </div>
-
-                </div>
-                <div class="col-lg-6">
-                    <div class="row g-4 align-items-center">
-                        <div class="col-md-6">
-                            <div class="row g-4">
-                                <div class="col-12 wow fadeIn" data-wow-delay="0.3s" id="col12">
-                                    <div class="text-center rounded py-5 px-4"
-                                        style="box-shadow: 0 0 45px rgba(0, 0, 0, 0.08)">
-                                        <div class="btn-square bg-light rounded-circle mx-auto mb-4"
-                                            style="width: 90px; height: 90px">
-                                            <img src="img/service-1.jpg" alt="" id="hinh">
-                                        </div>
-                                        <h4 class="mb-0">BÀI THÔNG TIN 2</h4>
-                                    </div>
-                                </div>
-                                <div class="col-12 wow fadeIn" data-wow-delay="0.5s" id="col12">
-                                    <div class="text-center rounded py-5 px-4"
-                                        style="box-shadow: 0 0 45px rgba(0, 0, 0, 0.08)">
-                                        <div class="btn-square bg-light rounded-circle mx-auto mb-4"
-                                            style="width: 90px; height: 90px">
-                                            <img src="img/service-2.jpg" alt="" id="hinh">
-                                        </div>
-                                        <h4 class="mb-0">BÀI THÔNG TIN 3</h4>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-md-6 wow fadeIn" data-wow-delay="0.7s" id="col12">
-                            <a href="service.html">
-                                <div class="text-center rounded py-5 px-4"
-                                    style="box-shadow: 0 0 45px rgba(0, 0, 0, 0.08)">
-                                    <div class="btn-square bg-light rounded-circle mx-auto mb-4"
-                                        style="width: 90px; height: 90px">
-                                        <i class="fa fa-tools fa-3x text-primary"></i>
-                                    </div>
-                                    <h4 class="mb-0">ĐỌC THÊM...</h4>
-                                </div>
-                            </a>
-                        </div>
-                    </div>
-                </div>
+  <!-- Services Start -->
+  <div class="container-xxl py-5">
+    <div class="container">
+      <div class="row g-5 align-items-center">
+        <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.1s">
+          <p class="fs-5 fw-bold text-primary">HÓT HÒN HỌT</p>
+          <h1 class="display-5 mb-4">
+            Phân loại rác giúp ích rất nhiều, bạn đã biết chưa?
+          </h1>
+          <p class="mb-4">
+            Bài báo “Taiwan's waste” đã đưa ra kết quả tích cực cho con số
+            trăm triệu USD
+            <br />bởi việc xử lý và phân loại nghiêm ngặt hơn 60% lượng phát
+            thải của cả nước. <br />Việc không phân loại rác sẽ dẫn đến nhiều
+            hậu quả nghiêm trọng ...
+          </p>
+          <button class="btn btn-primary py-3 px-4" onclick="openPopup1()" href="">
+            Đọc nè!
+          </button>
+          <div class="popup-overlay" id="popupOverlay1">
+            <div class="popup">
+              <button class="close-popup" onclick="closePopup1()">
+                &times;
+              </button>
+              <div id="hh2">
+                Phân loại rác giúp ích rất nhiều,<br />
+                bạn đã biết chưa?
+              </div>
+              <div id="content-div">
+                Bài báo “Taiwan's waste” đã đưa ra kết quả tích cực cho con số
+                trăm triệu USD bởi việc xử lý và phân loại nghiêm ngặt hơn 60%
+                lượng phát thải của cả nước. Việc không phân loại rác sẽ dẫn
+                đến nhiều hậu quả nghiêm trọng.
+                <img src="img/pexels-polina-tankilevitch-3735208.jpg" alt="" id="popup-img1" />
+                <br /><br />Đầu tiên ta có thể thấy rõ nhất môi trường đất và
+                nước xung quanh chúng ta sẽ bị ô nhiễm do các chất độc hại có
+                trong rác thải kim loại ngấm vào đất và, nước.Điều này ảnh
+                hưởng đến hệ sinh thái và sức khoẻ con người, gây ra các loại
+                dịch bệnh mới khó có thể kiểm soát. <br /><br />Thêm vào đó,
+                việc không phân loại rác sẽ dẫn đến sự lãng phí rác thải hữu
+                cơ và gây ra phát thải nhà kính. Nếu chúng ta không thực có sự
+                nghiêm túc và kiểm soát nguồn rác thải chặt chẽ, các vật liệu
+                tái chế (nhưa, kim loại và giấy) sẽ bị chôn lấp hoặc đốt cùng
+                rác thải hữu cơ. <br /><br />Vì vậy phân loại rác sẽ mang lại
+                những lợi ích đáng kể và cuộc sống an toàn cho cộng đồng chúng
+                ta. Đồng thời, chúng ta có thể tận dụng và xử lý lại những
+                nguồn rác phát thải, làm cho cộng đồng trở nên xanh hơn và bền
+                vững hơn.
+              </div>
             </div>
+          </div>
         </div>
+        <div class="col-lg-6">
+          <div class="row g-4 align-items-center">
+            <div class="col-md-6">
+              <div class="row g-4">
+                <div class="col-12 wow fadeIn" data-wow-delay="0.3s" id="col12" onclick="openPopup2();">
+                  <div class="text-center rounded py-5 px-4" style="box-shadow: 0 0 45px rgba(0, 0, 0, 0.08)">
+                    <div class="btn-square bg-light rounded-circle mx-auto mb-4" style="width: 180px; height: 180px">
+                      <img src="img/service-1.jpg" alt="" id="hinh" />
+                    </div>
+                    <h4 class="mb-0">Rác thải được chia mấy loại ?</h4>
+                  </div>
+                </div>
+                <div class="popup-overlay" id="popupOverlay2">
+                  <div class="popup">
+                    <button class="close-popup" onclick="closePopup2();">
+                      &times;
+                    </button>
+                    <div id="hh2">Rác thải được chia mấy loại ?</div>
+                    <div id="content-div">
+                      Rác thải thường được chia làm ba loại chính để tiện cho
+                      việc xử lý và tái chế:
+                      <br /><br />1. Rác hữu cơ: Bao gồm các chất thải có
+                      nguồn gốc sinh học, như thực phẩm thừa, vỏ trái cây, rau
+                      củ, lá cây, cỏ và các loại rác thải thực vật khác. Rác
+                      hữu cơ có thể được sử dụng để làm phân compost, giúp cải
+                      thiện đất và giảm lượng rác thải phải xử lý.
+                      <br /><br /><img src="img/1.jpg" alt="" id="popup-img2" />
+                      <br />
+                      2. Rác thải nguy hại: Bao gồm các chất thải có thể gây
+                      hại cho môi trường và sức khỏe con người như pin, đèn
+                      huỳnh quang, hóa chất, thuốc trừ sâu, sơn và các sản
+                      phẩm điện tử cũ. Loại rác này cần được xử lý đặc biệt để
+                      tránh ô nhiễm và nguy hại. <br /><br />3. Rác tái chế:
+                      Gồm các vật liệu có thể tái chế như giấy, nhựa, kim
+                      loại, thủy tinh và các sản phẩm đóng gói. Các vật liệu
+                      này sau khi được thu gom sẽ được xử lý và tái chế thành
+                      các sản phẩm mới, giúp tiết kiệm tài nguyên và năng
+                      lượng. <br /><br />Ngoài ba loại chính trên, một số hệ
+                      thống phân loại rác có thể chia rác thành nhiều loại chi
+                      tiết hơn, như rác thải xây dựng, rác thải y tế, và các
+                      loại rác thải khác để quản lý và xử lý một cách hiệu quả
+                      hơn.
+                    </div>
+                  </div>
+                </div>
+                <div class="col-12 wow fadeIn" data-wow-delay="0.3s" id="col12">
+                  <div class="text-center rounded py-5 px-4" style="box-shadow: 0 0 45px rgba(0, 0, 0, 0.08)">
+                    <div class="btn-square bg-light rounded-circle mx-auto mb-4" style="width: 180px; height: 180px">
+                      <img src="img/KimNgan.JPG" alt="" id="hinh" />
+                    </div>
+                    <h4 class="mb-0">Coming soon!</h4>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-6 wow fadeIn" data-wow-delay="0.7s" id="col12">
+              <a href="service.html">
+                <div class="text-center rounded py-5 px-4" style="box-shadow: 0 0 45px rgba(0, 0, 0, 0.08)">
+                  <div class="btn-square bg-light rounded-circle mx-auto mb-4" style="width: 90px; height: 90px">
+                    <i class="fa fa-tools fa-3x text-primary"></i>
+                  </div>
+                  <h4 class="mb-0">ĐỌC THÊM...</h4>
+                </div>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
-    <!-- Services End -->
+  </div>
+  <!-- Services End -->
 
-    <!-- About Start -->
-    <div class="container-xxl py-5">
-        <div class="container">
-            <div class="row g-5 align-items-end">
-                <div class="col-lg-3 col-md-5 wow fadeInUp" data-wow-delay="0.1s">
-                    <img class="img-fluid rounded" id="img-about" data-wow-delay="0.1s" src="img/about.jpg" />
-                </div>
-                <div class="col-lg-6 col-md-7 wow fadeInUp" data-wow-delay="0.3s">
-                    <h1 class="display-1 text-primary mb-0">01</h1>
-                    <p class="text-primary mb-4">Năm hoạt động</p>
-                    <h1 class="display-5 mb-4">Chúng tôi.........</h1>
-                    <p class="mb-4">
-                        Cụ thể hơn......................................................
-                        <br />..............................................................................................
-                    </p>
-                    <a class="btn btn-primary py-3 px-4" href="">Explore More</a>
-                </div>
-                <div class="col-lg-3 col-md-12 wow fadeInUp" data-wow-delay="0.5s">
-                    <div class="row g-5">
-                        <div class="col-12 col-sm-6 col-lg-12">
-                            <div class="border-start ps-4">
-                                <i class="fa fa-award fa-3x text-primary mb-3"></i>
-                                <h4 class="mb-3">Ý 1</h4>
-                                <span>nội dung 1</span>
-                            </div>
-                        </div>
-                        <div class="col-12 col-sm-6 col-lg-12">
-                            <div class="border-start ps-4">
-                                <i class="fa fa-users fa-3x text-primary mb-3"></i>
-                                <h4 class="mb-3">Ý 2</h4>
-                                <span>Nội dung 2</span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
+  <!-- About Start -->
+  <div class="container-xxl py-5">
+    <div class="container">
+      <div class="row g-5 align-items-end">
+        <div class="col-lg-3 col-md-5 wow fadeInUp" id="id99" data-wow-delay="0.1s">
+          <img class="img-fluid rounded" id="img-about" data-wow-delay="0.1s" src="img/about.jpg" />
         </div>
+        <div class="col-lg-6 col-md-7 wow fadeInUp" data-wow-delay="0.3s">
+          <h1 class="display-5 mb-4" id="id101">PURE PICK UP</h1>
+          <p class="mb-4" id="about-content">
+            PPU (Pure Pick Up) là không gian xanh trực tuyến dành cho cộng
+            đồng những người dùng có mối quan tâm đến việc giữ môi trường sống
+            xanh. <br />Ô nhiễm môi trường chính là vấn đề nhức nhối cho trong
+            hàng chục năm qua, và gây ra nhiều tác động tiêu cực ảnh hưởng
+            trực tiếp đến hệ sinh thái, môi trường sống và chất lượng đời sống
+            con người. Tuy là vấn đề mang tính cấp thiết đối với tất cả công
+            dân, song song đó để giải quyết vấn đề thì vẫn luôn vô cùng nan
+            giải. Ý thức của người dân về tầm quan trọng của môi trường ngày
+            càng có nhiều dấu hiệu tích cực nhưng bên cạnh đó, con số rác thải
+            tống vào hàng ngày, hàng giờ vẫn luôn tăng vượt ngưỡng. Đặc biệt
+            là rác thải nhựa - một trong những tác nhân ô nhiễm nguy hiểm,
+            tiềm tàng những nguy cơ ảnh hưởng đến hệ sinh thái và chất lượng
+            cuộc sống con người. <br />
+            Vì lí do đó mà Pure Pick Up ra đời để kịp thời cùng mọi người
+            chung tay bảo vệ hành tinh xanh.
+          </p>
+        </div>
+        <div class="col-lg-3 col-md-12 wow fadeInUp" data-wow-delay="0.5s" id="id100">
+          <div class="row g-5">
+            <div class="col-12 col-sm-6 col-lg-12">
+              <div class="border-start ps-4">
+                <i class="fa fa-award fa-3x text-primary mb-3"></i>
+                <h4 class="mb-3">Cung cấp</h4>
+                <span>PPU sẽ có 01 Website nhằm cung cấp các Khóa học, Workshop xanh hoặc kết hợp Workshop của các dự án
+                  gây quỹ, các nguồn sản phẩm xanh, quảng cáo của các doanh nghiệp nhỏ, Gen Z,...
+                </span>
+              </div>
+            </div>
+            <div class="col-12 col-sm-6 col-lg-12">
+              <div class="border-start ps-4">
+                <i class="fa fa-users fa-3x text-primary mb-3"></i>
+                <h4 class="mb-3">Dịch vụ</h4>
+                <span>PPU cung cấp 1 số dịch vụ về cộng đồng chủ yếu ở các nền tảng MXH như Facebook, Instagram,... nhằm
+                  giúp người dùng kết nối hơn với các sản phẩm mà PPU cung cấp, hướng người dùng đến các giá trị cốt lõi
+                  và đúng đắn của việc “Sống xanh”.</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
-    <!-- About End -->
+  </div>
+  <!-- About End -->
 
-    <!-- Team Start -->
-    <div class="container-xxl py-5">
-        <div class="container">
-            <div class="text-center mx-auto wow fadeInUp" data-wow-delay="0.1s" style="max-width: 500px">
-                <h1 class="display-5 mb-5">Dedicated & Experienced Team Members</h1>
-            </div>
-            <div class="row g-4">
-                <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
-                    <div class="team-item rounded">
-                        <!-- <img class="img-fluid" src="img/team-1.jpg" alt="" /> -->
-                        <img class="img-fluid" src="img/carousel-1.jpg" alt="" />
-                        <div class="team-text">
-                            <h4 class="mb-0">Doris Jordan</h4>
-                            <p class="text-primary">Landscape Designer</p>
-                            <div class="team-social d-flex">
-                                <a class="btn btn-square rounded-circle me-2" href=""><i
-                                        class="fab fa-facebook-f"></i></a>
-                                <a class="btn btn-square rounded-circle me-2" href=""><i class="fab fa-twitter"></i></a>
-                                <a class="btn btn-square rounded-circle me-2" href=""><i
-                                        class="fab fa-instagram"></i></a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
-                    <div class="team-item rounded">
-                        <img class="img-fluid" src="img/team-2.jpg" alt="" />
-                        <div class="team-text">
-                            <h4 class="mb-0">Johnny Ramirez</h4>
-                            <p class="text-primary">Garden Designer</p>
-                            <div class="team-social d-flex">
-                                <a class="btn btn-square rounded-circle me-2" href=""><i
-                                        class="fab fa-facebook-f"></i></a>
-                                <a class="btn btn-square rounded-circle me-2" href=""><i class="fab fa-twitter"></i></a>
-                                <a class="btn btn-square rounded-circle me-2" href=""><i
-                                        class="fab fa-instagram"></i></a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.5s">
-                    <div class="team-item rounded">
-                        <img class="img-fluid" src="img/team-3.jpg" alt="" />
-                        <div class="team-text">
-                            <h4 class="mb-0">Diana Wagner</h4>
-                            <p class="text-primary">Senior Gardener</p>
-                            <div class="team-social d-flex">
-                                <a class="btn btn-square rounded-circle me-2" href=""><i
-                                        class="fab fa-facebook-f"></i></a>
-                                <a class="btn btn-square rounded-circle me-2" href=""><i class="fab fa-twitter"></i></a>
-                                <a class="btn btn-square rounded-circle me-2" href=""><i
-                                        class="fab fa-instagram"></i></a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
+  <!-- Projects Start -->
+  <div class="container-xxl py-5">
+    <div class="container">
+      <div class="text-center mx-auto wow fadeInUp" data-wow-delay="0.1s" style="max-width: 500px">
+        <h1 class="display-5 mb-5">Các khóa học</h1>
+      </div>
+      <div class="row wow fadeInUp" data-wow-delay="0.3s">
+        <div class="col-12 text-center">
+          <ul class="list-inline rounded mb-5" id="portfolio-flters">
+            <li class="mx-2 active" data-filter="*">All</li>
+            <li class="mx-2" data-filter=".first">kiểu 1</li>
+            <li class="mx-2" data-filter=".second">kiểu 2</li>
+          </ul>
         </div>
+      </div>
+      <div class="row g-4 portfolio-container">
+        <div class="col-lg-4 col-md-6 portfolio-item first wow fadeInUp" data-wow-delay="0.1s">
+          <div class="portfolio-inner rounded">
+            <img class="img-fluid" src="img/khoahoc-comingsoon.png" alt="" />
+            <div class="portfolio-text">
+              <h4 class="text-white mb-4">
+                Miêu tả khóa học 1
+                <br />....................................................
+                <br />....................................................
+                <br />....................................................
+                <br />....................................................
+                <br />....................................................
+                <br />....................................................
+              </h4>
+              <div class="d-flex">
+                <a class="btn btn-lg-square rounded-circle mx-2" href="javascript:void(0)"><i class="fa fa-eye"></i></a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-6 portfolio-item second wow fadeInUp" data-wow-delay="0.3s">
+          <div class="portfolio-inner rounded">
+            <img class="img-fluid" src="img/khoahoc-comingsoon.png" alt="" />
+            <div class="portfolio-text">
+              <h4 class="text-white mb-4">
+                Miêu tả khóa học 2
+                <br />....................................................
+                <br />....................................................
+                <br />....................................................
+                <br />....................................................
+                <br />....................................................
+                <br />....................................................
+              </h4>
+              <div class="d-flex">
+                <a class="btn btn-lg-square rounded-circle mx-2" href="javascript:void(0)"><i class="fa fa-eye"></i></a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-6 portfolio-item first wow fadeInUp" data-wow-delay="0.5s">
+          <div class="portfolio-inner rounded">
+            <img class="img-fluid" src="img/khoahoc-comingsoon.png" alt="" />
+            <div class="portfolio-text">
+              <h4 class="text-white mb-4">
+                Miêu tả khóa học 3
+                <br />....................................................
+                <br />....................................................
+                <br />....................................................
+                <br />....................................................
+                <br />....................................................
+                <br />....................................................
+              </h4>
+              <div class="d-flex">
+                <a class="btn btn-lg-square rounded-circle mx-2" href="javascript:void(0)"><i class="fa fa-eye"></i></a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+
+
+      </div>
     </div>
-    <!-- Team End -->
+  </div>
+  <!-- Projects End -->
 
-    <!-- Projects Start -->
-    <div class="container-xxl py-5">
-        <div class="container">
-            <div class="text-center mx-auto wow fadeInUp" data-wow-delay="0.1s" style="max-width: 500px">
-                <h1 class="display-5 mb-5">Các khóa học</h1>
-            </div>
-            <div class="row wow fadeInUp" data-wow-delay="0.3s">
-                <div class="col-12 text-center">
-                    <ul class="list-inline rounded mb-5" id="portfolio-flters">
-                        <li class="mx-2 active" data-filter="*">All</li>
-                        <li class="mx-2" data-filter=".first">kiểu 1</li>
-                        <li class="mx-2" data-filter=".second">kiểu 2</li>
-                    </ul>
-                </div>
-            </div>
-            <div class="row g-4 portfolio-container">
-                <div class="col-lg-4 col-md-6 portfolio-item first wow fadeInUp" data-wow-delay="0.1s">
-                    <div class="portfolio-inner rounded">
-                        <img class="img-fluid" src="img/service-1.jpg" alt="" />
-                        <div class="portfolio-text">
-                            <h4 class="text-white mb-4">
-                                Miêu tả khóa học 1.............
-                                <br />..................................
-                                <br />....................................................
-                                <br />....................................................
-                                <br />....................................................
-                                <br />....................................................
-                                <br />....................................................
-                            </h4>
-                            <div class="d-flex">
-                                <a class="btn btn-lg-square rounded-circle mx-2" href="img/service-1.jpg"
-                                    data-lightbox="portfolio"><i class="fa fa-eye"></i></a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-6 portfolio-item second wow fadeInUp" data-wow-delay="0.3s">
-                    <div class="portfolio-inner rounded">
-                        <img class="img-fluid" src="img/service-2.jpg" alt="" />
-                        <div class="portfolio-text">
-                            <h4 class="text-white mb-4">
-                                Miêu tả khóa học 2.............
-                                <br />..................................
-                                <br />....................................................
-                                <br />....................................................
-                                <br />....................................................
-                                <br />....................................................
-                                <br />....................................................
-                            </h4>
-                            <div class="d-flex">
-                                <a class="btn btn-lg-square rounded-circle mx-2" href="img/service-2.jpg"
-                                    data-lightbox="portfolio"><i class="fa fa-eye"></i></a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-6 portfolio-item first wow fadeInUp" data-wow-delay="0.5s">
-                    <div class="portfolio-inner rounded">
-                        <img class="img-fluid" src="img/service-3.jpg" alt="" />
-                        <div class="portfolio-text">
-                            <h4 class="text-white mb-4">
-                                Miêu tả khóa học 3.............
-                                <br />..................................
-                                <br />....................................................
-                                <br />....................................................
-                                <br />....................................................
-                                <br />....................................................
-                                <br />....................................................
-                            </h4>
-                            <div class="d-flex">
-                                <a class="btn btn-lg-square rounded-circle mx-2" href="img/service-3.jpg"
-                                    data-lightbox="portfolio"><i class="fa fa-eye"></i></a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-6 portfolio-item second wow fadeInUp" data-wow-delay="0.1s">
-                    <div class="portfolio-inner rounded">
-                        <img class="img-fluid" src="img/service-4.jpg" alt="" />
-                        <div class="portfolio-text">
-                            <h4 class="text-white mb-4">
-                                Miêu tả khóa học 4.............
-                                <br />..................................
-                                <br />....................................................
-                                <br />....................................................
-                                <br />....................................................
-                                <br />....................................................
-                                <br />....................................................
-                            </h4>
-                            <div class="d-flex">
-                                <a class="btn btn-lg-square rounded-circle mx-2" href="img/service-4.jpg"
-                                    data-lightbox="portfolio"><i class="fa fa-eye"></i></a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-6 portfolio-item first wow fadeInUp" data-wow-delay="0.3s">
-                    <div class="portfolio-inner rounded">
-                        <img class="img-fluid" src="img/service-5.jpg" alt="" />
-                        <div class="portfolio-text">
-                            <h4 class="text-white mb-4">
-                                Miêu tả khóa học 5.............
-                                <br />..................................
-                                <br />....................................................
-                                <br />....................................................
-                                <br />....................................................
-                                <br />....................................................
-                                <br />....................................................
-                            </h4>
-                            <div class="d-flex">
-                                <a class="btn btn-lg-square rounded-circle mx-2" href="img/service-5.jpg"
-                                    data-lightbox="portfolio"><i class="fa fa-eye"></i></a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-6 portfolio-item second wow fadeInUp" data-wow-delay="0.5s">
-                    <div class="portfolio-inner rounded">
-                        <img class="img-fluid" src="img/service-6.jpg" alt="" />
-                        <div class="portfolio-text">
-                            <h4 class="text-white mb-4">
-                                Các khóa học khác.............
-                                <br />..................................
-                                <br />....................................................
-                                <br />....................................................
-                                <br />....................................................
-                                <br />....................................................
-                                <br />....................................................
-                            </h4>
-                            <div class="d-flex">
-                                <a class="btn btn-lg-square rounded-circle mx-2" href="img/service-6.jpg"
-                                    data-lightbox="portfolio"><i class="fa fa-eye"></i></a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
+  <!-- Testimonial Start -->
+  <div class="container-xxl py-5">
+    <div class="container">
+      <div class="row g-5">
+        <div class="col-lg-5 wow fadeInUp" data-wow-delay="0.1s">
+          <h1 class="chiase-header">Chia sẻ cá nhân</h1>
+          <p class="mb-4">Một vài chia sẻ về dự án Pure Pick Up </p>
         </div>
+        <div class="col-lg-7 wow fadeInUp" data-wow-delay="0.5s">
+          <div class="owl-carousel testimonial-carousel">
+            <div class="testimonial-item">
+              <img class="img-fluid rounded mb-3" src="img/review-avt1.png" alt="">
+              <p class="fs-5">Mình rất vui khi được đồng hành cùng dự án “PPU” từ những ngày đầu tiên. Đây chính là dự
+                án mà tụi mình đã dành rất nhiều nỗ lực, thời gian và công sức để tạo ra một kênh giúp cho những bạn trẻ
+                có hứng thú với việc bảo vệ môi trường như tụi mình có thể góp một phần nhỏ vào công cuộc bảo vệ trái
+                đất này. Hi vọng dự án PPU của tụi mình sẽ lan tỏa được những giá trị tích cực của việc tái chế với
+                những cộng đồng người trẻ, ít nhất là ở trường đại học Cần Thơ và Đại học Kiến trúc.
+              <h4>Châu Mỹ Quỳnh</h4>
+              <span>Ngôn ngữ Pháp - sinh viên trường đại học Cần Thơ</span>
+            </div>
+            <div class="testimonial-item">
+              <img class="img-fluid rounded mb-3" src="img/review-avt2.png" alt="">
+              <p class="fs-5">Chị rất vui khi thấy giới trẻ quan tâm đến dự án thu gom rác PPU, góp phần giải quyết ô
+                nhiễm môi trường. Chị ấn tượng với tinh thần trách nhiệm và khả năng lan tỏa ý thức bảo vệ môi trường
+                của các bạn. Tham gia dự án không chỉ giúp làm sạch môi trường mà còn nâng cao nhận thức, thay đổi thói
+                quen xả rác và giáo dục về phân loại, tái chế rác thải. Chị hy vọng dự án sẽ lan rộng, xây dựng tương
+                lai xanh - sạch - đẹp cho cộng đồng.
+              </p>
+              <h4>Nguyễn Thị Anh Thư</h4>
+              <span>Viện lúa đồng bằng sông Cửu Long</span>
+            </div>
+            <div class="testimonial-item">
+              <img class="img-fluid rounded mb-3" src="img/review-avt3.png" alt="">
+              <p class="fs-5">“PPU” đối với mình là một người bạn đồng hành tuyệt vời. Nhờ có “PPU” mà mình có được thêm
+                nhiều kiến thức về việc xử lý rác thải đúng cách cũng như là góp phần nhỏ trong việc bảo vệ môi trường.
+                Hiện tại mình đã đóng góp được hơn 2kg chai nhựa cho Chanh xành rồi (cười lớn). Nhờ có các thùng rác của
+                “PPU” trong khuôn viên trường mà mình không cần phải lượn hết cả thành phố để tìm chỗ thu gom chai nhựa.
+                Mình mong “PPU” sẽ được nhiều sinh viên biết đến hơn để Chanh Xành có thêm đồ ăn haha
+              <h4>Nguyễn Thị Linh Chi</h4>
+              <span>Truyền thông đa phương tiện - sinh viên trường đại học Cần Thơ</span>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
-    <!-- Projects End -->
+  </div>
+  <!-- Testimonial End -->
 
-    <!-- Testimonial Start -->
-    <!-- <div class="container-xxl py-5">
-        <div class="container">
-            <div class="row g-5">
-                <div class="col-lg-5 wow fadeInUp" data-wow-delay="0.1s">
-                    <p class="fs-5 fw-bold text-primary">Testimonial</p>
-                    <h1 class="display-5 mb-5">What Our Clients Say About Us!</h1>
-                    <p class="mb-4">Tempor erat elitr rebum at clita. Diam dolor diam ipsum sit. Aliqu diam amet diam et
-                        eos. Clita erat ipsum et lorem et sit sed stet lorem sit clita duo justo.</p>
-                    <a class="btn btn-primary py-3 px-4" href="">See More</a>
-                </div>
-                <div class="col-lg-7 wow fadeInUp" data-wow-delay="0.5s">
-                    <div class="owl-carousel testimonial-carousel">
-                        <div class="testimonial-item">
-                            <img class="img-fluid rounded mb-3" src="img/testimonial-1.jpg" alt="">
-                            <p class="fs-5">Dolores sed duo clita tempor justo dolor et stet lorem kasd labore dolore
-                                lorem ipsum. At lorem lorem magna ut et, nonumy et labore et tempor diam tempor erat.
-                            </p>
-                            <h4>Client Name</h4>
-                            <span>Profession</span>
-                        </div>
-                        <div class="testimonial-item">
-                            <img class="img-fluid rounded mb-3" src="img/testimonial-2.jpg" alt="">
-                            <p class="fs-5">Dolores sed duo clita tempor justo dolor et stet lorem kasd labore dolore
-                                lorem ipsum. At lorem lorem magna ut et, nonumy et labore et tempor diam tempor erat.
-                            </p>
-                            <h4>Client Name</h4>
-                            <span>Profession</span>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div> -->
-
-    <!-- Footer Start -->
-    <div class="container-fluid bg-dark text-light footer mt-5 py-5 wow fadeIn" data-wow-delay="0.1s">
-        <div class="container py-5">
-            <!-- <div class="row g-5">
-                <div class="col-lg-3 col-md-6">
-                    <h4 class="text-white mb-4">Our Office</h4>
-                    <p class="mb-2"><i class="fa fa-map-marker-alt me-3"></i>123 Street, New York, USA</p>
-                    <p class="mb-2"><i class="fa fa-phone-alt me-3"></i>+012 345 67890</p>
-                    <p class="mb-2"><i class="fa fa-envelope me-3"></i>info@example.com</p>
-                    <div class="d-flex pt-2">
-                        <a class="btn btn-square btn-outline-light rounded-circle me-2" href=""><i
-                                class="fab fa-twitter"></i></a>
-                        <a class="btn btn-square btn-outline-light rounded-circle me-2" href=""><i
-                                class="fab fa-facebook-f"></i></a>
-                        <a class="btn btn-square btn-outline-light rounded-circle me-2" href=""><i
-                                class="fab fa-youtube"></i></a>
-                        <a class="btn btn-square btn-outline-light rounded-circle me-2" href=""><i
-                                class="fab fa-linkedin-in"></i></a>
-                    </div>
-                </div>
-                <div class="col-lg-3 col-md-6">
-                    <h4 class="text-white mb-4">Services</h4>
-                    <a class="btn btn-link" href="">Landscaping</a>
-                    <a class="btn btn-link" href="">Pruning plants</a>
-                    <a class="btn btn-link" href="">Urban Gardening</a>
-                    <a class="btn btn-link" href="">Garden Maintenance</a>
-                    <a class="btn btn-link" href="">Green Technology</a>
-                </div>
-                <div class="col-lg-3 col-md-6">
-                    <h4 class="text-white mb-4">Quick Links</h4>
-                    <a class="btn btn-link" href="">About Us</a>
-                    <a class="btn btn-link" href="">Contact Us</a>
-                    <a class="btn btn-link" href="">Our Services</a>
-                    <a class="btn btn-link" href="">Terms & Condition</a>
-                    <a class="btn btn-link" href="">Support</a>
-                </div>
-                <div class="col-lg-3 col-md-6">
-                    <h4 class="text-white mb-4">Newsletter</h4>
-                    <p>Dolor amet sit justo amet elitr clita ipsum elitr est.</p>
-                    <div class="position-relative w-100">
-                        <input class="form-control bg-light border-light w-100 py-3 ps-4 pe-5" type="text"
-                            placeholder="Your email">
-                        <button type="button"
-                            class="btn btn-primary py-2 position-absolute top-0 end-0 mt-2 me-2">SignUp</button>
-                    </div>
-                </div>
-            </div> -->
-        </div>
+  <!-- Footer Start -->
+  <div class="container-fluid bg-dark text-light footer mt-5 py-5 wow fadeIn" data-wow-delay="0.4s">
+    <div class="container py-5">
     </div>
-    <!-- Footer End -->
+  </div>
+  <!-- Footer End -->
 
-    <!-- Back to Top -->
-    <a href="#" class="btn btn-lg btn-primary btn-lg-square rounded-circle back-to-top"><i
-            class="bi bi-arrow-up"></i></a>
+  <!-- Back to Top -->
+  <a href="#" class="btn btn-lg btn-primary btn-lg-square rounded-circle back-to-top"><i class="bi bi-arrow-up"></i></a>
 
-    <!-- JavaScript Libraries -->
-    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
-    <script src="lib/wow/wow.min.js"></script>
-    <script src="lib/easing/easing.min.js"></script>
-    <script src="lib/waypoints/waypoints.min.js"></script>
-    <script src="lib/owlcarousel/owl.carousel.min.js"></script>
-    <script src="lib/counterup/counterup.min.js"></script>
-    <script src="lib/parallax/parallax.min.js"></script>
-    <script src="lib/isotope/isotope.pkgd.min.js"></script>
-    <script src="lib/lightbox/js/lightbox.min.js"></script>
+  <!-- JavaScript Libraries -->
+  <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="lib/wow/wow.min.js"></script>
+  <script src="lib/easing/easing.min.js"></script>
+  <script src="lib/waypoints/waypoints.min.js"></script>
+  <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+  <script src="lib/counterup/counterup.min.js"></script>
+  <script src="lib/parallax/parallax.min.js"></script>
+  <script src="lib/isotope/isotope.pkgd.min.js"></script>
+  <script src="lib/lightbox/js/lightbox.min.js"></script>
 
-    <!-- Template Javascript -->
-    <script src="js/main.js"></script>
+  <!-- Template Javascript -->
+  <script src="js/main.js"></script>
 </body>
 
 </html>

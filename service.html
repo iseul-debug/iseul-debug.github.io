@@ -2,231 +2,245 @@
 <html lang="en">
 
 <head>
-    <meta charset="utf-8" />
-    <title>Gardener - Gardening Website Template</title>
-    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
-    <meta content="" name="keywords" />
-    <meta content="" name="description" />
+  <meta charset="utf-8" />
+  <title>Gardener - Gardening Website Template</title>
+  <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+  <meta content="" name="keywords" />
+  <meta content="" name="description" />
 
-    <!-- Favicon -->
-    <link href="img/favicon.ico" rel="icon" />
+  <!-- Favicon -->
+  <link href="img/favicon.ico" rel="icon" />
 
-    <!-- Google Web Fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-        href="https://fonts.googleapis.com/css2?family=Jost:wght@500;600;700&family=Open+Sans:wght@400;500&display=swap"
-        rel="stylesheet" />
+  <!-- Google Web Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Jost:wght@500;600;700&family=Noto+Serif:wght@400;500&display=swap"
+    rel="stylesheet" />
 
-    <!-- Icon Font Stylesheet -->
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet" />
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet" />
+  <!-- Icon Font Stylesheet -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet" />
 
-    <!-- Libraries Stylesheet -->
-    <link href="lib/animate/animate.min.css" rel="stylesheet" />
-    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet" />
-    <link href="lib/lightbox/css/lightbox.min.css" rel="stylesheet" />
+  <!-- Libraries Stylesheet -->
+  <link href="lib/animate/animate.min.css" rel="stylesheet" />
+  <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet" />
+  <link href="lib/lightbox/css/lightbox.min.css" rel="stylesheet" />
 
-    <!-- Customized Bootstrap Stylesheet -->
-    <link href="css/bootstrap.min.css" rel="stylesheet" />
+  <!-- Customized Bootstrap Stylesheet -->
+  <link href="css/bootstrap.min.css" rel="stylesheet" />
 
-    <!-- Template Stylesheet -->
-    <link href="css/style.css" rel="stylesheet" />
+  <!-- Template Stylesheet -->
+  <link href="css/style.css" rel="stylesheet" />
 </head>
 
 <body>
-    <!-- Spinner Start -->
-    <div id="spinner"
-        class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
-        <div class="spinner-border text-primary" role="status" style="width: 3rem; height: 3rem"></div>
-    </div>
-    <!-- Spinner End -->
+  <!-- Spinner Start -->
+  <div id="spinner"
+    class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
+    <div class="spinner-border text-primary" role="status" style="width: 3rem; height: 3rem"></div>
+  </div>
+  <!-- Spinner End -->
 
-    <!-- Navbar Start -->
-    <div id="myNav" class="overlay">
-        <video autoplay muted loop id="bg-video">
-            <source src="video.mp4" type="video/mp4">
-        </video>
-        <div class="color-overlay"></div>
-        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-        <div class="overlay-content">
-            <a href="index.html" class="">Trang chủ</a>
-            <a href="about.html" class="">Về chúng tôi</a>
-            <a href="service.html" class="active">Bài viết</a>
-            <a href="project.html" class="">Khóa học</a>
-            <a href="contact.html" class="">Liên hệ</a>
-        </div>
+  <!-- Navbar Start -->
+  <div id="myNav" class="overlay">
+    <video autoplay muted loop id="bg-video">
+      <source src="video.mp4" type="video/mp4" />
+    </video>
+    <div class="color-overlay"></div>
+    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+    <div class="overlay-content">
+      <a href="index.html" class="">Trang chủ</a>
+      <a href="about.html" class="">Về chúng tôi</a>
+      <a href="service.html" class="active">Bài viết</a>
+      <a href="project.html" class="">Khóa học</a>
+      <a href="contact.html" class="">Địa điểm thu gom</a>
     </div>
-    <div id="container">
-        <span style="font-size: 40px; cursor: pointer" id="openNav" onclick="openNav()">&#9776;</span>
+  </div>
+  <div id="container">
+    <div id="home-icon-container">
+      <a href="index.html">
+        <img src="img/home-icon.png" alt="" id="home-icon" /></a>
     </div>
-    <!-- Navbar End -->
+    <span id="openNav" onclick="openNav()">&#9776;</span>
+  </div>
+  <!-- Navbar End -->
 
-    <!-- Page Header Start -->
-    <div class="container-fluid page-header-baiviet py-5 mb-5 wow fadeIn" data-wow-delay="0.1s">
-        <div class="container text-center py-5">
-            <h1 class="display-3 text-white mb-4 animated slideInDown">
-                Bạn có biết...?
-            </h1>
-            >
-        </div>
+  <!-- Page Header Start -->
+  <div class="container-fluid page-header-baiviet py-5 mb-5 wow fadeIn" data-wow-delay="0.1s">
+    <div class="container text-center py-5">
+      <h1 class="display-3 text-white mb-4 animated slideInDown">
+        Bạn có biết...?
+      </h1>
+      >
     </div>
-    <!-- Page Header End -->
+  </div>
+  <!-- Page Header End -->
 
-    <!-- Service Start -->
-    <div class="container-xxl py-5">
-        <div class="container">
-            <div class="text-center mx-auto wow fadeInUp" data-wow-delay="0.1s" style="max-width: 500px">
-                <h1 class="display-5 mb-5">Có thể bạn nên biết</h1>
+  <!-- Service Start -->
+  <div class="container-xxl py-5">
+    <div class="container">
+      <div class="text-center mx-auto wow fadeInUp" data-wow-delay="0.1s" style="max-width: 500px">
+        <h1 class="display-5 mb-5">Có thể bạn nên biết</h1>
+      </div>
+      <div class="row g-4">
+        <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
+          <div class="service-item rounded d-flex h-100">
+            <div class="service-img rounded">
+              <img class="img-fluid" src="img/service-2.jpg" alt="" />
             </div>
-            <div class="row g-4">
-                <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
-                    <div class="service-item rounded d-flex h-100">
-                        <div class="service-img rounded">
-                            <img class="img-fluid" src="img/service-1.jpg" alt="" />
-                        </div>
-                        <div class="service-text rounded p-5">
-                            <div class="btn-square rounded-circle mx-auto mb-3">
-                                <img class="img-fluid" src="img/icon/icon-3.png" alt="Icon" />
-                            </div>
-                            <h4 class="mb-3">Title 1</h4>
-                            <p class="mb-4">
-                                Erat ipsum justo amet duo et elitr dolor, est duo duo eos
-                                lorem sed diam stet diam sed stet.
-                            </p>
-                            <!-- <a class="btn btn-sm" href=""><i class="fa fa-plus text-primary me-2"></i>Read More</a> -->
-                            <a class="btn btn-sm" href="javascript:void(0)" onclick="openPopup()"><i
-                                    class="fa fa-plus text-primary me-2"></i>Read More</a>
+            <div class="service-text rounded p-5" onmouseover="hoverbaiviet(1)" onmouseout="non_hoverbaiviet(1)">
+              <div class="btn-square rounded-circle mx-auto mb-3">
+                <img class="img-fluid" src="img/icon/icon-3.png" alt="Icon" />
+              </div>
+              <p class="mb-4" id="baiviet-hovernt1">
+                Bài báo “Taiwan's waste” đã đưa ra kết quả tích cực cho
+                con số trăm triệu USD bởi việc xử lý và phân loại nghiêm
+                ngặt hơn 60% lượng phát thải của cả nước. Việc không phân
+                loại rác sẽ dẫn đến nhiều hậu quả nghiêm trọng...
+              </p>
+              <!-- <a class="btn btn-sm" href=""><i class="fa fa-plus text-primary me-2"></i>Read More</a> -->
+              <a class="btn btn-sm" href="javascript:void(0)" onclick="openPopup1()"><i
+                  class="fa fa-plus text-primary me-2"></i>Xem thêm</a>
 
-                            <div class="popup-overlay" id="popupOverlay">
-                                <div class="popup">
-                                    <button class="close-popup" onclick="closePopup()">&times;</button>
-                                    <div id="hh2">Title</div>
-                                    <div id="content-div">Content</div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+              <div class="popup-overlay" id="popupOverlay1">
+                <div class="popup">
+                  <button class="close-popup" onclick="closePopup1()">
+                    &times;
+                  </button>
+                  <div id="hh2">
+                    Phân loại rác giúp ích rất nhiều,<br />
+                    bạn đã biết chưa?
+                  </div>
+                  <div id="content-div">
+                    Bài báo “Taiwan's waste” đã đưa ra kết quả tích cực cho
+                    con số trăm triệu USD bởi việc xử lý và phân loại nghiêm
+                    ngặt hơn 60% lượng phát thải của cả nước. Việc không phân
+                    loại rác sẽ dẫn đến nhiều hậu quả nghiêm trọng.
+                    <img src="img/pexels-polina-tankilevitch-3735208.jpg" alt="" id="popup-img1" />
+                    <br /><br />Đầu tiên ta có thể thấy rõ nhất môi trường đất
+                    và nước xung quanh chúng ta sẽ bị ô nhiễm do các chất độc
+                    hại có trong rác thải kim loại ngấm vào đất và, nước.Điều
+                    này ảnh hưởng đến hệ sinh thái và sức khoẻ con người, gây
+                    ra các loại dịch bệnh mới khó có thể kiểm soát.
+                    <br /><br />Thêm vào đó, việc không phân loại rác sẽ dẫn
+                    đến sự lãng phí rác thải hữu cơ và gây ra phát thải nhà
+                    kính. Nếu chúng ta không thực có sự nghiêm túc và kiểm
+                    soát nguồn rác thải chặt chẽ, các vật liệu tái chế (nhưa,
+                    kim loại và giấy) sẽ bị chôn lấp hoặc đốt cùng rác thải
+                    hữu cơ. <br /><br />Vì vậy phân loại rác sẽ mang lại những
+                    lợi ích đáng kể và cuộc sống an toàn cho cộng đồng chúng
+                    ta. Đồng thời, chúng ta có thể tận dụng và xử lý lại những
+                    nguồn rác phát thải, làm cho cộng đồng trở nên xanh hơn và
+                    bền vững hơn.
+                  </div>
                 </div>
-                <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
-                    <div class="service-item rounded d-flex h-100">
-                        <div class="service-img rounded">
-                            <img class="img-fluid" src="img/service-2.jpg" alt="" />
-                        </div>
-                        <div class="service-text rounded p-5">
-                            <div class="btn-square rounded-circle mx-auto mb-3">
-                                <img class="img-fluid" src="img/icon/icon-6.png" alt="Icon" />
-                            </div>
-                            <h4 class="mb-3">Title 2</h4>
-                            <p class="mb-4">
-                                Erat ipsum justo amet duo et elitr dolor, est duo duo eos
-                                lorem sed diam stet diam sed stet.
-                            </p>
-                            <a class="btn btn-sm" href=""><i class="fa fa-plus text-primary me-2"></i>Read More</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.5s">
-                    <div class="service-item rounded d-flex h-100">
-                        <div class="service-img rounded">
-                            <img class="img-fluid" src="img/service-3.jpg" alt="" />
-                        </div>
-                        <div class="service-text rounded p-5">
-                            <div class="btn-square rounded-circle mx-auto mb-3">
-                                <img class="img-fluid" src="img/icon/icon-5.png" alt="Icon" />
-                            </div>
-                            <h4 class="mb-3">Title 3</h4>
-                            <p class="mb-4">
-                                Erat ipsum justo amet duo et elitr dolor, est duo duo eos
-                                lorem sed diam stet diam sed stet.
-                            </p>
-                            <a class="btn btn-sm" href=""><i class="fa fa-plus text-primary me-2"></i>Read More</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
-                    <div class="service-item rounded d-flex h-100">
-                        <div class="service-img rounded">
-                            <img class="img-fluid" src="img/service-4.jpg" alt="" />
-                        </div>
-                        <div class="service-text rounded p-5">
-                            <div class="btn-square rounded-circle mx-auto mb-3">
-                                <img class="img-fluid" src="img/icon/icon-4.png" alt="Icon" />
-                            </div>
-                            <h4 class="mb-3">Title 4</h4>
-                            <p class="mb-4">
-                                Erat ipsum justo amet duo et elitr dolor, est duo duo eos
-                                lorem sed diam stet diam sed stet.
-                            </p>
-                            <a class="btn btn-sm" href=""><i class="fa fa-plus text-primary me-2"></i>Read More</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
-                    <div class="service-item rounded d-flex h-100">
-                        <div class="service-img rounded">
-                            <img class="img-fluid" src="img/service-5.jpg" alt="" />
-                        </div>
-                        <div class="service-text rounded p-5">
-                            <div class="btn-square rounded-circle mx-auto mb-3">
-                                <img class="img-fluid" src="img/icon/icon-8.png" alt="Icon" />
-                            </div>
-                            <h4 class="mb-3">Title 5</h4>
-                            <p class="mb-4">
-                                Erat ipsum justo amet duo et elitr dolor, est duo duo eos
-                                lorem sed diam stet diam sed stet.
-                            </p>
-                            <a class="btn btn-sm" href=""><i class="fa fa-plus text-primary me-2"></i>Read More</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.5s">
-                    <div class="service-item rounded d-flex h-100">
-                        <div class="service-img rounded">
-                            <img class="img-fluid" src="img/service-6.jpg" alt="" />
-                        </div>
-                        <div class="service-text rounded p-5">
-                            <div class="btn-square rounded-circle mx-auto mb-3">
-                                <img class="img-fluid" src="img/icon/icon-2.png" alt="Icon" />
-                            </div>
-                            <h4 class="mb-3">Title 6</h4>
-                            <p class="mb-4">
-                                Erat ipsum justo amet duo et elitr dolor, est duo duo eos
-                                lorem sed diam stet diam sed stet.
-                            </p>
-                            <a class="btn btn-sm" href=""><i class="fa fa-plus text-primary me-2"></i>Read More</a>
-                        </div>
-                    </div>
-                </div>
+              </div>
             </div>
+          </div>
         </div>
+        <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
+          <div class="service-item rounded d-flex h-100">
+            <div class="service-img rounded">
+              <img class="img-fluid" src="img/service-1.jpg" alt="" />
+            </div>
+            <div class="service-text rounded p-5" onmouseover="hoverbaiviet(2)" onmouseout="non_hoverbaiviet(2)">
+              <div class="btn-square rounded-circle mx-auto mb-3">
+                <img class="img-fluid" src="img/icon/icon-6.png" alt="Icon" />
+              </div>
+              <p class="mb-4" id="baiviet-hovernt2">
+                Việc nhận biết và phân loại đúng rác thải không chỉ giúp tiết kiệm tài nguyên, năng lượng mà còn góp
+                phần bảo vệ môi trường và nâng cao chất lượng cuộc sống của chúng ta...
+                <br><br>
+              </p>
+              <a class="btn btn-sm" href="javascript:void(0)" onclick="openPopup2()"><i
+                  class=" fa fa-plus text-primary me-2"></i>Xem thêm</a>
+            </div>
+          </div>
+        </div>
+        <div class="popup-overlay" id="popupOverlay2">
+          <div class="popup">
+            <button class="close-popup" onclick="closePopup2();">
+              &times;
+            </button>
+            <div id="hh2">Rác thải được chia mấy loại ?</div>
+            <div id="content-div">
+              Rác thải thường được chia làm ba loại chính để tiện cho
+              việc xử lý và tái chế:
+              <br /><br />1. Rác hữu cơ: Bao gồm các chất thải có
+              nguồn gốc sinh học, như thực phẩm thừa, vỏ trái cây, rau
+              củ, lá cây, cỏ và các loại rác thải thực vật khác. Rác
+              hữu cơ có thể được sử dụng để làm phân compost, giúp cải
+              thiện đất và giảm lượng rác thải phải xử lý.
+              <br /><br /><img src="img/1.jpg" alt="" id="popup-img2" />
+              <br />
+              2. Rác thải nguy hại: Bao gồm các chất thải có thể gây
+              hại cho môi trường và sức khỏe con người như pin, đèn
+              huỳnh quang, hóa chất, thuốc trừ sâu, sơn và các sản
+              phẩm điện tử cũ. Loại rác này cần được xử lý đặc biệt để
+              tránh ô nhiễm và nguy hại. <br /><br />3. Rác tái chế:
+              Gồm các vật liệu có thể tái chế như giấy, nhựa, kim
+              loại, thủy tinh và các sản phẩm đóng gói. Các vật liệu
+              này sau khi được thu gom sẽ được xử lý và tái chế thành
+              các sản phẩm mới, giúp tiết kiệm tài nguyên và năng
+              lượng. <br /><br />Ngoài ba loại chính trên, một số hệ
+              thống phân loại rác có thể chia rác thành nhiều loại chi
+              tiết hơn, như rác thải xây dựng, rác thải y tế, và các
+              loại rác thải khác để quản lý và xử lý một cách hiệu quả
+              hơn.
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.5s">
+          <div class="service-item rounded d-flex h-100">
+            <div class="service-img rounded">
+              <img class="img-fluid" src="img/CQcute.JPG" alt="" />
+            </div>
+            <div class="service-text rounded p-5">
+              <div class="btn-square rounded-circle mx-auto mb-3">
+                <img class="img-fluid" src="img/icon/icon-5.png" alt="Icon" />
+              </div>
+              <h4 class="mb-3">Coming soon!</h4>
+              <p class="mb-4">
+                &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+                &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+                &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+                &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+                <br><br><br>
+
+              </p>
+              <a class="btn btn-sm" href=""><i class="fa fa-plus text-primary me-2"></i>Xem thêm</a>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
-    <!-- Service End -->
+  </div>
+  <!-- Service End -->
 
-    <!-- Footer Start -->
-    <div class="container-fluid bg-dark text-light footer mt-5 py-5 wow fadeIn" data-wow-delay="0.1s">
-        <div class="container py-5"></div>
-    </div>
-    <!-- Footer End -->
+  <!-- Footer Start -->
+  <div class="container-fluid bg-dark text-light footer mt-5 py-5 wow fadeIn" data-wow-delay="0.1s">
+    <div class="container py-5"></div>
+  </div>
+  <!-- Footer End -->
 
-    <!-- Back to Top -->
-    <a href="#" class="btn btn-lg btn-primary btn-lg-square rounded-circle back-to-top"><i
-            class="bi bi-arrow-up"></i></a>
+  <!-- Back to Top -->
+  <a href="#" class="btn btn-lg btn-primary btn-lg-square rounded-circle back-to-top"><i class="bi bi-arrow-up"></i></a>
 
-    <!-- JavaScript Libraries -->
-    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
-    <script src="lib/wow/wow.min.js"></script>
-    <script src="lib/easing/easing.min.js"></script>
-    <script src="lib/waypoints/waypoints.min.js"></script>
-    <script src="lib/owlcarousel/owl.carousel.min.js"></script>
-    <script src="lib/counterup/counterup.min.js"></script>
-    <script src="lib/parallax/parallax.min.js"></script>
-    <script src="lib/isotope/isotope.pkgd.min.js"></script>
-    <script src="lib/lightbox/js/lightbox.min.js"></script>
+  <!-- JavaScript Libraries -->
+  <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="lib/wow/wow.min.js"></script>
+  <script src="lib/easing/easing.min.js"></script>
+  <script src="lib/waypoints/waypoints.min.js"></script>
+  <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+  <script src="lib/counterup/counterup.min.js"></script>
+  <script src="lib/parallax/parallax.min.js"></script>
+  <script src="lib/isotope/isotope.pkgd.min.js"></script>
+  <script src="lib/lightbox/js/lightbox.min.js"></script>
 
-    <!-- Template Javascript -->
-    <script src="js/main.js"></script>
+  <!-- Template Javascript -->
+  <script src="js/main.js"></script>
 </body>
 
 </html>
