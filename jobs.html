@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <title>PPU</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <meta content="" name="keywords" />
+    <meta content="" name="description" />
+
+    <!-- Favicon -->
+    <link href="img/favicon.ico" rel="icon" />
+
+    <!-- Google Web Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Jost:wght@500;600;700&family=Noto+Serif:wght@400;500&display=swap"
+        rel="stylesheet" />
+
+    <!-- Icon Font Stylesheet -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet" />
+
+    <!-- Libraries Stylesheet -->
+    <link href="lib/animate/animate.min.css" rel="stylesheet" />
+    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet" />
+    <link href="lib/lightbox/css/lightbox.min.css" rel="stylesheet" />
+
+    <!-- Customized Bootstrap Stylesheet -->
+    <link href="css/bootstrap.min.css" rel="stylesheet" />
+
+    <!-- Template Stylesheet -->
+    <link href="css/style.css" rel="stylesheet" />
+</head>
+
+<body>
+    <!-- Spinner Start -->
+    <div id="spinner"
+        class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
+        <div class="spinner-border text-primary" role="status" style="width: 3rem; height: 3rem"></div>
+    </div>
+    <!-- Spinner End -->
+
+    <!-- Navbar Start -->
+    <div id="myNav" class="overlay">
+        <video autoplay muted loop id="bg-video">
+            <source src="video.mp4" type="video/mp4" />
+        </video>
+        <div class="color-overlay"></div>
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <div class="overlay-content">
+            <a href="index.html" class="">Trang chủ</a>
+            <a href="about.html" class="">Về chúng tôi</a>
+            <a href="service.html" class="">Bài viết</a>
+            <a href="project.html" class="">Khóa học</a>
+            <a href="jobs.html" class="active">Công việc xanh</a>
+            <a href="contact.html" class="">Địa điểm thu gom</a>
+        </div>
+    </div>
+    <div id="container">
+        <div id="home-icon-container">
+            <a href="index.html">
+                <img src="img/home-icon.png" alt="" id="home-icon" /></a>
+        </div>
+        <span id="openNav" onclick="openNav()">&#9776;</span>
+    </div>
+    <!-- Navbar End -->
+
+    <!-- Page Header Start -->
+    <div class="container-fluid page-header-about py-5 mb-5 wow fadeIn" data-wow-delay="0.1s">
+        <div class="container text-center py-5">
+            <h1 class="display-3 text-white mb-4 animated slideInDown">
+                Công việc xanh
+            </h1>
+        </div>
+    </div>
+    <!-- Page Header End -->
+
+    <!-- Team Start -->
+    <div class="team-layout-container">
+        <span class="team-layout1">
+            <div class="container-xxl py-5">
+                <div class="container" id="container-team-layout1">
+                    <div class="row g-5 align-items-end">
+                        <div class="col-lg-6 col-md-7 wow fadeInUp" data-wow-delay="0.3s">
+                            <h1 class="display-5 mb-4" id="id102">PURE PICK UP</h1>
+                            <p class="mb-4" id="team-about-content">
+                                PPU hợp tác giữa Đoàn Thanh niên và các công ty địa phương nhằm tổ chức các hoạt động
+                                bảo vệ môi trường, với trọng điểm là rác thải nhựa và nguy cơ của vi nhựa.
+                                Chúng tôi tin rằng, với sự chung tay của tất cả các đơn vị và người dân, chúng ta có thể
+                                tạo ra một môi trường sống trong lành và bền vững hơn.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </span>
+
+        <span class="team-layout2">
+            <div class="row wow fadeInUp" data-wow-delay="0.3s">
+                <div class="col-12 text-center">
+                    <ul class="list-inline rounded mb-5" id="portfolio-flters">
+                        <li class="mx-2 active" onclick="openTeam('first'); closeTeam('second');">
+                            Trang 1
+                        </li>
+                        <li class="mx-2" onclick="openTeam('second'); closeTeam('first');">
+                            Trang 2
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="container-xxl py-5">
+                <div class="container">
+                    <div class="text-center mx-auto wow fadeInUp" data-wow-delay="0.1s" style="max-width: 500px">
+                        <h1 class="display-5 mb-5">Công việc xanh</h1>
+                    </div>
+                    <div class="row g-4">
+                        <div class="col-lg-4 col-md-6 wow first fadeInUp item-team" data-wow-delay="0.1s">
+                            <div class="team-item rounded">
+                                <div class="team-container">
+                                    <img class="img-team" src="img/team-1.jpg" alt="" />
+                                    <div class="team-title">
+                                        <strong>Phân loại rác thải nhựa</strong>
+                                    </div>
+                                    <div class="team-content">
+                                        Tổ chức Môi Trường Xanh <br />
+                                    </div>
+                                    <div class="team-text">
+                                        <h4 class="mb-0">
+                                            Tình nguyện viên phân loại rác thải nhựa
+                                        </h4>
+                                        <p class="text-primary">
+                                            Đơn vị: Tổ chức Môi Trường Xanh
+                                        </p>
+                                        <div class="team-social d-flex">
+                                            Địa điểm: Cần Thơ, Việt Nam
+                                            <br />
+                                            Mô tả công việc: Tham gia phân loại rác thải nhựa từ các
+                                            khu dân cư và cơ sở sản xuất, giúp tăng cường hiệu quả
+                                            tái chế và giảm thiểu ô nhiễm môi trường.<br />Số lượng
+                                            còn lại: 5
+                                        </div>
+                                        <a class="btn btn-square me-2" href="" id="apl-btn-team">Apply</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-6 wow first fadeInUp item-team" data-wow-delay="0.3s">
+                            <div class="team-item rounded">
+                                <div class="team-container">
+                                    <img class="img-team" src="img/team-1.jpg" alt="" />
+                                    <div class="team-title">
+                                        <strong>Dọn dẹp bờ biển</strong>
+                                    </div>
+                                    <div class="team-content">
+                                        Green Future <br />
+                                    </div>
+                                    <div class="team-text">
+                                        <h4 class="mb-0">Tình nguyện viên dọn dẹp bờ biển</h4>
+                                        <p class="text-primary">Đơn vị: Green Future</p>
+                                        <div class="team-social d-flex">
+                                            Địa điểm: Cần Thơ, Việt Nam
+                                            <br />
+                                            Mô tả công việc: Tham gia vào các hoạt động dọn dẹp bờ
+                                            biển, thu gom rác thải, bảo vệ môi trường biển và động
+                                            vật sinh sống tại đây.<br />Số lượng còn lại: 3
+                                        </div>
+                                        <a class="btn btn-square me-2" href="" id="apl-btn-team">Apply</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-6 wow first fadeInUp item-team" data-wow-delay="0.3s">
+                            <div class="team-item rounded">
+                                <div class="team-container">
+                                    <img class="img-team" src="img/team-1.jpg" alt="" />
+                                    <div class="team-title">
+                                        <strong>Tình nguyện viên tuyên truyền về sống xanh</strong>
+                                    </div>
+                                    <div class="team-content">
+                                        Nhóm Sống Xanh Cần Thơ <br />
+                                    </div>
+                                    <div class="team-text">
+                                        <h4 class="mb-0">Tình nguyện viên tuyên truyền về sống xanh</h4>
+                                        <p class="text-primary">Đơn vị: Nhóm Sống Xanh Cần Thơ</p>
+                                        <div class="team-social d-flex">
+                                            Địa điểm: Cần Thơ, Việt Nam
+                                            <br />
+                                            Mô tả công việc: Tuyên truyền, giáo dục cộng đồng về lối sống xanh,
+                                            tiết kiệm tài nguyên và giảm thiểu rác thải thông qua các hoạt động và chiến
+                                            dịch truyền thông.<br />Số lượng còn lại: 7
+
+                                        </div>
+                                        <a class="btn btn-square me-2" href="" id="apl-btn-team">Apply</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-6 wow second fadeInUp item-team" data-wow-delay="0.3s">
+                            <div class="team-item rounded">
+                                <div class="team-container">
+                                    <img class="img-team" src="img/team-1.jpg" alt="" />
+                                    <div class="team-title">
+                                        <strong>Tình nguyện viên trồng cây xanh</strong>
+                                    </div>
+                                    <div class="team-content">
+                                        Môi Trường Sạch <br />
+                                    </div>
+                                    <div class="team-text">
+                                        <h4 class="mb-0">Tình nguyện viên trồng cây xanh</h4>
+                                        <p class="text-primary">Đơn vị: Môi Trường Sạch</p>
+                                        <div class="team-social d-flex">
+                                            Địa điểm: Cần Thơ, Việt Nam
+                                            <br />
+                                            Mô tả công việc: Tham gia vào các hoạt động trồng cây xanh tại các khu vực
+                                            công cộng,
+                                            giúp cải thiện chất lượng không khí và tạo ra môi trường sống trong
+                                            lành.<br />Số lượng còn lại: 3
+                                        </div>
+                                        <a class="btn btn-square me-2" href="" id="apl-btn-team">Apply</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-6 wow second fadeInUp item-team" data-wow-delay="0.3s">
+                            <div class="team-item rounded">
+                                <div class="team-container">
+                                    <img class="img-team" src="img/team-1.jpg" alt="" />
+                                    <div class="team-title">
+                                        <strong>Tình nguyện viên tái chế rác thải nhựa</strong>
+                                    </div>
+                                    <div class="team-content">
+                                        Eco Warriors <br />
+                                    </div>
+                                    <div class="team-text">
+                                        <h4 class="mb-0">Tình nguyện viên tái chế rác thải nhựa</h4>
+                                        <p class="text-primary">Công ty: Eco Warriors</p>
+                                        <div class="team-social d-flex">
+                                            Địa điểm: Cần Thơ, Việt Nam
+                                            <br />
+                                            Mô tả công việc: Hỗ trợ trong quá trình tái chế rác thải nhựa, từ việc thu
+                                            gom,
+                                            phân loại đến các bước xử lý và tái chế thành sản phẩm mới.<br />Số lượng
+                                            còn lại: 4
+                                        </div>
+                                        <a class="btn btn-square me-2" href="" id="apl-btn-team">Apply</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-6 wow second fadeInUp item-team" data-wow-delay="0.3s">
+                            <div class="team-item rounded">
+                                <div class="team-container">
+                                    <img class="img-team" src="img/team-1.jpg" alt="" />
+                                    <div class="team-title">
+                                        <strong>Tình nguyện viên giáo dục môi trường</strong>
+                                    </div>
+                                    <div class="team-content">
+                                        Green Schools <br />
+                                    </div>
+                                    <div class="team-text">
+                                        <h4 class="mb-0">Tình nguyện viên giáo dục môi trường</h4>
+                                        <p class="text-primary">Đơn vị: Green Schools</p>
+                                        <div class="team-social d-flex">
+                                            Địa điểm: Cần Thơ, Việt Nam
+                                            <br />
+                                            Mô tả công việc: Tham gia vào các chương trình giáo dục môi trường cho học
+                                            sinh,
+                                            giúp nâng cao nhận thức về bảo vệ môi trường và lối sống bền vững.<br />Số
+                                            lượng còn lại: 0
+                                        </div>
+                                        <a class="btn btn-square me-2" href="" id="apl-btn-team">Apply</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </span>
+        <div class="team-footer"></div>
+    </div>
+    <!-- Team End -->
+
+    <!-- Footer Start -->
+    <!-- <div
+      class="container-fluid bg-dark text-light footer mt-5 py-5 wow fadeIn team-footer"
+      data-wow-delay="0.1s"
+    >
+      <div class="container py-5"></div>
+    </div> -->
+    <!-- Footer End -->
+
+    <!-- Back to Top -->
+    <a href="#" class="btn btn-lg btn-primary btn-lg-square rounded-circle back-to-top"><i
+            class="bi bi-arrow-up"></i></a>
+
+    <!-- JavaScript Libraries -->
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="lib/wow/wow.min.js"></script>
+    <script src="lib/easing/easing.min.js"></script>
+    <script src="lib/waypoints/waypoints.min.js"></script>
+    <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+    <script src="lib/counterup/counterup.min.js"></script>
+    <script src="lib/parallax/parallax.min.js"></script>
+    <script src="lib/isotope/isotope.pkgd.min.js"></script>
+    <script src="lib/lightbox/js/lightbox.min.js"></script>
+
+    <!-- Template Javascript -->
+    <script src="js/main.js"></script>
+</body>
+
+</html>

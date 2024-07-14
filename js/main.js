@@ -68,7 +68,7 @@
     ],
   });
 })(jQuery);
-
+// -------------------------------
 function openNav() {
   document.getElementById("myNav").style.width = "100%";
 }
@@ -76,7 +76,29 @@ function openNav() {
 function closeNav() {
   document.getElementById("myNav").style.width = "0%";
 }
+//--------------------------------
 
+function openTeam(className) {
+  let elements = document.querySelectorAll(`.${className}`);
+  elements.forEach((element) => {
+    // element.style.display = "block";
+    element.classList.add("active");
+  });
+}
+
+function closeTeam(className) {
+  let elements = document.querySelectorAll(`.${className}`);
+  elements.forEach((element) => {
+    // element.style.display = "none";
+    element.classList.remove("active");
+  });
+}
+
+document.addEventListener("DOMContentLoaded", function () {
+  openTeam("first");
+  closeTeam("second");
+});
+//--------------------------------
 function openPopup1() {
   document.getElementById("popupOverlay1").style.display = "block";
 }
@@ -92,10 +114,10 @@ function closePopup2() {
   document.getElementById("popupOverlay2").style.display = "none";
 }
 function hoverbaiviet(element) {
-  const divId = 'baiviet-hovernt' + element;
+  const divId = "baiviet-hovernt" + element;
   document.getElementById(divId).style.visibility = "hidden";
 }
 function non_hoverbaiviet(element) {
-  const divId = 'baiviet-hovernt' + element;
+  const divId = "baiviet-hovernt" + element;
   document.getElementById(divId).style.visibility = "visible";
 }
